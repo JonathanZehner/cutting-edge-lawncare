@@ -1,5 +1,6 @@
 /*-- Imports --*/
 @import "variables"; // variables.less file
+@import "mixins.less"; // mixins.less file
 
 /*-- Reset Rule --*/
 * {
@@ -17,29 +18,17 @@ Google Fonts
 			
 -----------------------------------*/
 
-//MIXIN #1
-.header {
-    color: @pale-green;
-    font-family: 'Cinzel Decorative', cursive;
-    font-size: 3.5em;
-    text-align: center;
-}
+/*--********************** Universal Styling (begin) ******************--*/
 
-//MIXIN #2
-.body-copy {
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 1em;
-    color: @text-color;
-}
+/*-- (begin) Sticky Footer --*/
 
-//MIXIN #3
-.small-text {
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: .8em;
-    color: @pale-green;
-    letter-spacing: .2em;
-}
+/*-- (end) Sticky Footer --*/
 
+
+/*-- Body --*/
+
+
+/*-- Header --*/
 // HEADER
 
 .guarantee {
@@ -98,21 +87,6 @@ nav {
 article, aside, details, figcaption, figure, footer, header, main, nav, section, summary {
     display:block;
 }
-
-
-@import "mixins.less"; // mixins.less file
-
-/*--********************** Universal Styling (begin) ******************--*/
-
-/*-- (begin) Sticky Footer --*/
-
-/*-- (end) Sticky Footer --*/
-
-
-/*-- Body --*/
-
-
-/*-- Header --*/
 
 
 /*-- Main --*/
