@@ -1,17 +1,12 @@
+/*-- Imports --*/
+@import "variables"; // variables.less file
+
 /*-- Reset Rule --*/
 * {
 	margin: 0;
 	padding: 0;
 	border: 0;
 }
-
-article, aside, details, figcaption, figure, footer, header, main, nav, section, summary {
-    display:block;
-}
-
-/*-- Imports --*/
-@import "variables"; // variables.less file
-@import "mixins.less"; // mixins.less file
 
 /*---------- Font Families ----------*
 
@@ -21,6 +16,91 @@ Google Fonts
 * Josefin Sans    
 			
 -----------------------------------*/
+
+//MIXIN #1
+.header {
+    color: @pale-green;
+    font-family: 'Cinzel Decorative', cursive;
+    font-size: 3.5em;
+    text-align: center;
+}
+
+//MIXIN #2
+.body-copy {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1em;
+    color: @text-color;
+}
+
+//MIXIN #3
+.small-text {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: .8em;
+    color: @pale-green;
+    letter-spacing: .2em;
+}
+
+// HEADER
+
+.guarantee {
+    margin-top: 80px;
+    .small-text ();
+    text-align: center;
+}
+
+header {
+    background: #ccc url(../images/header-edit.jpg) no-repeat center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.top-logo {
+    width: 250px;
+    margin-left: 40px;
+}
+
+.nav-logo {
+    width: 120px;
+    margin-left: 30px;
+}
+
+h1 {
+    .header();
+    margin-bottom: 80px;
+}
+
+nav {
+    background-color: @bg-kolor;
+    font-family: 'Josefin Sans', sans-serif;
+    text-transform: uppercase;
+    font-size: .8em;
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: inline-flex;
+
+        li {
+            padding: 30px;
+            font-weight: 500;
+        }
+    }
+
+    a {
+        text-decoration: none;
+        color: @text-color;
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+}
+
+article, aside, details, figcaption, figure, footer, header, main, nav, section, summary {
+    display:block;
+}
+
+
+@import "mixins.less"; // mixins.less file
 
 /*--********************** Universal Styling (begin) ******************--*/
 
