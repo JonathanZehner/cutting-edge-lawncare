@@ -11,17 +11,32 @@
 
 /*---------- Font Families ----------*
 
-Google Fonts
+             Google Fonts 
 
-* Cinizel Decorative
-* Josefin Sans    
+* Cinizel Decorative:   'Cinzel Decorative'
+* Josefin Sans:         'Josefin Sans'    
 			
 -----------------------------------*/
 
 /*--********************** Universal Styling (begin) ******************--*/
 
 /*-- (begin) Sticky Footer --*/
+html, body {
+    height: 100%;
+}
 
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    flex: 1 0 auto;
+}
+
+.footer {
+    flex-shrink: 0;
+}
 /*-- (end) Sticky Footer --*/
 
 

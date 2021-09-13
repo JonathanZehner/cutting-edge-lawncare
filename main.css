@@ -1,0 +1,112 @@
+/*-- Imports --*/
+.header {
+  color: #bece95;
+  font-family: 'Cinzel Decorative', cursive;
+  font-size: 3.5rem;
+  text-align: center;
+}
+.body-copy {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1rem;
+  color: #353f13;
+}
+.small-text {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: .8rem;
+  color: #bece95;
+  letter-spacing: .2rem;
+}
+/*-- Reset Rule --*/
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+/*---------- Font Families ----------*
+
+Google Fonts
+
+* Cinizel Decorative
+* Josefin Sans    
+			
+-----------------------------------*/
+/*--********************** Universal Styling (begin) ******************--*/
+/*-- (begin) Sticky Footer --*/
+/*-- (end) Sticky Footer --*/
+/*-- Body --*/
+/*-- Header --*/
+.guarantee {
+  margin-top: 80px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: .8rem;
+  color: #bece95;
+  letter-spacing: .2rem;
+  text-align: center;
+}
+header {
+  background: #cccccc url(../images/header-edit.jpg) no-repeat center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.top-logo {
+  width: 250px;
+  margin-left: 40px;
+}
+.nav-logo {
+  width: 120px;
+  margin-left: 30px;
+}
+h1 {
+  color: #bece95;
+  font-family: 'Cinzel Decorative', cursive;
+  font-size: 3.5rem;
+  text-align: center;
+  margin-bottom: 80px;
+}
+nav {
+  background-color: #90bc61;
+  font-family: 'Josefin Sans', sans-serif;
+  text-transform: uppercase;
+  font-size: .8em;
+}
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+nav ul li {
+  padding: 30px;
+  font-weight: 500;
+}
+nav a {
+  text-decoration: none;
+  color: #353f13;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+/*-- Main --*/
+/*-- Footer --*/
+/*--******************** Start 650 Media Query *********************--*/
+/*--********************* End 650 Media Query *********************--*/
+/*--******************** Start 950 Media Query *********************--*/
+/*--********************* End 950 Media Query *********************--*/
+/*--******************** Start 1250 Media Query *********************--*/
+/*--********************* End 950 Media Query *********************--*/
+/*--******************** Start 1500 Media Query *********************--*/
+/*--********************* End 1500 Media Query *********************--*/
