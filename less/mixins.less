@@ -4,7 +4,7 @@
 //MIXIN #1 Header
 .header {
     color: @pale-green;
-    font-family: 'Cinzel Decorative', cursive;
+    font-family: 'Cinzel Decorative', sans-serif;
     font-size: 3.5rem;
     text-align: center;
 }
@@ -60,27 +60,30 @@
 
 // Hamburger Nav Menu
 .hamburger-cross {
-    background:none;
-    color: @b-grn-lt;
+    background:#05683a5b;
     border:0;
-    font-weight:bold;
+    border-radius: 50%;
+    color: @b-grn-lt;
     cursor:pointer;
+    font-weight:bold;
+    margin-bottom: 25px;
     outline:none;
     z-index:@z;
 }
 
 .hamburger {
     .hamburger-cross();
-    font-size:1.4rem;
+    font-size: 28px;
     line-height:45px;
-    padding:5px 15px 0px 15px;
+    padding:5px 15px 5px 15px;
 }
 
 .cross{
     .hamburger-cross();
-    font-size:3rem;
+    font-size: 60px;
+    height: 50px;
     line-height:65px;
-    padding:7px 15px 0px 15px;
+    padding:0 15px 0 15px;
 }
 
 .ham-menu {

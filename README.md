@@ -17,7 +17,9 @@ ___
 
 * <p>Smith, G. _Hamburger Menu_  **https://codepen.io/g13nn/pen/eHGEF**  
 
-* <p>(Cite resource)   
+* <p>W3 Schools. CSS Shadow Effects. https://www.w3schools.com/css/css3_shadows.asp  
+
+* <p>
 
 ___
 

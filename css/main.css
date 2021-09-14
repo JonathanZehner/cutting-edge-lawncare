@@ -1,7 +1,7 @@
 /*-- Imports --*/
 .header {
   color: #bece95;
-  font-family: 'Cinzel Decorative', cursive;
+  font-family: 'Cinzel Decorative', sans-serif;
   font-size: 3.5rem;
   text-align: center;
 }
@@ -52,37 +52,44 @@
   padding-bottom: 80px;
 }
 .hamburger-cross {
-  background: none;
-  color: #39b54a;
+  background: #05683a5b;
   border: 0;
-  font-weight: bold;
+  border-radius: 50%;
+  color: #39b54a;
   cursor: pointer;
+  font-weight: bold;
+  margin-bottom: 25px;
   outline: none;
   z-index: 1000000000;
 }
 .hamburger {
-  background: none;
-  color: #39b54a;
+  background: #05683a5b;
   border: 0;
-  font-weight: bold;
+  border-radius: 50%;
+  color: #39b54a;
   cursor: pointer;
+  font-weight: bold;
+  margin-bottom: 25px;
   outline: none;
   z-index: 1000000000;
-  font-size: 1.4rem;
+  font-size: 28px;
   line-height: 45px;
-  padding: 5px 15px 0px 15px;
+  padding: 5px 15px 5px 15px;
 }
 .cross {
-  background: none;
-  color: #39b54a;
+  background: #05683a5b;
   border: 0;
-  font-weight: bold;
+  border-radius: 50%;
+  color: #39b54a;
   cursor: pointer;
+  font-weight: bold;
+  margin-bottom: 25px;
   outline: none;
   z-index: 1000000000;
-  font-size: 3rem;
+  font-size: 60px;
+  height: 50px;
   line-height: 65px;
-  padding: 7px 15px 0px 15px;
+  padding: 0 15px 0 15px;
 }
 .ham-menu {
   z-index: 1000000000;
@@ -173,7 +180,10 @@ body {
 }
 /*-- Header --*/
 .home-header {
-  background: #cccccc url(../images/header-edit.jpg) no-repeat center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #cccec6 url(../images/header-edit.jpg) no-repeat center;
   background-attachment: fixed;
   background-size: cover;
   display: -webkit-box;
@@ -186,15 +196,14 @@ body {
 }
 .home-header .top-logo {
   width: 250px;
-  margin-left: 40px;
 }
 .home-header h1 {
   color: #bece95;
-  font-family: 'Cinzel Decorative', cursive;
+  font-family: 'Cinzel Decorative', sans-serif;
   font-size: 3.5rem;
   text-align: center;
   margin-top: 50px;
-  margin-bottom: 80px;
+  text-shadow: 1px 1px 2px #10110c, 0 0 25px #cccec6, 0 0 5px #a1d73f;
 }
 .home-header .guarantee {
   margin-top: 50px;
@@ -204,30 +213,36 @@ body {
   color: #bece95;
   letter-spacing: .2rem;
   text-align: center;
+  text-shadow: 1px 1px 2px #10110c, 0 0 25px #cccec6, 0 0 5px #a1d73f;
 }
 .home-header .hamburger {
-  background: none;
-  color: #39b54a;
+  background: #05683a5b;
   border: 0;
-  font-weight: bold;
+  border-radius: 50%;
+  color: #39b54a;
   cursor: pointer;
+  font-weight: bold;
+  margin-bottom: 25px;
   outline: none;
   z-index: 1000000000;
-  font-size: 1.4rem;
+  font-size: 28px;
   line-height: 45px;
-  padding: 5px 15px 0px 15px;
+  padding: 5px 15px 5px 15px;
 }
 .home-header .cross {
-  background: none;
-  color: #39b54a;
+  background: #05683a5b;
   border: 0;
-  font-weight: bold;
+  border-radius: 50%;
+  color: #39b54a;
   cursor: pointer;
+  font-weight: bold;
+  margin-bottom: 25px;
   outline: none;
   z-index: 1000000000;
-  font-size: 3rem;
+  font-size: 60px;
+  height: 50px;
   line-height: 65px;
-  padding: 7px 15px 0px 15px;
+  padding: 0 15px 0 15px;
 }
 .home-header .menu {
   z-index: 1000000000;
