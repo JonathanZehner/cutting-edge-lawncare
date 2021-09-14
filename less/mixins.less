@@ -1,4 +1,7 @@
-//MIXIN #1
+// Imports
+@import "variables"; // variables.less
+
+//MIXIN #1 Header
 .header {
     color: @pale-green;
     font-family: 'Cinzel Decorative', cursive;
@@ -6,14 +9,14 @@
     text-align: center;
 }
 
-//MIXIN #2
+//MIXIN #2 Body Copy
 .body-copy {
     font-family: 'Josefin Sans', sans-serif;
     font-size: 1rem;
     color: @text-color;
 }
 
-//MIXIN #3
+//MIXIN #3 Small Text
 .small-text {
     font-family: 'Josefin Sans', sans-serif;
     font-size: .8rem;
@@ -21,12 +24,14 @@
     letter-spacing: .2rem;
 }
 
-// Desktop Nav
+// Desktop Nav Menu
 .desktop-nav {
     background-color: @bg-kolor;
+    display: flex;
+    flex-flow: row nowrap;
     font-family: 'Josefin Sans', sans-serif;
+    font-size: .8rem;
     text-transform: uppercase;
-    font-size: .8em;
 
     .nav-logo {  //Nav-bar logo
         width: 120px;
@@ -48,6 +53,73 @@
                 color: @text-color;
                 padding-top: 80px;
                 padding-bottom: 80px;
+            }
+        }
+    }
+}
+
+// Hamburger Nav Menu
+.hamburger-cross {
+    background:none;
+    color: @b-grn-lt;
+    border:0;
+    font-weight:bold;
+    cursor:pointer;
+    outline:none;
+    z-index:@z;
+}
+
+.hamburger {
+    .hamburger-cross();
+    font-size:1.4rem;
+    line-height:45px;
+    padding:5px 15px 0px 15px;
+}
+
+.cross{
+    .hamburger-cross();
+    font-size:3rem;
+    line-height:65px;
+    padding:7px 15px 0px 15px;
+}
+
+.ham-menu {
+    z-index:@z; 
+    font-weight:bold; 
+    font-size:0.8rem; 
+    width:100%; 
+    background: @b-grn-lt;  
+    position:absolute; 
+    text-align:center; 
+    font-size:1rem;
+
+    .nav-main {
+        margin: 0; 
+        padding: 0; 
+        list-style-type: none; 
+        list-style-image: none;
+    
+        li {
+            display: block;   
+            padding:15px 0 15px 0; 
+            border-bottom: @pale-green 1px solid;
+        
+            a { 
+                text-decoration:none;  
+                margin: 0px; 
+                color: @b-blk;
+            }
+        }
+    
+        li:hover {
+            display: block;    
+            background: @b-dkgrn; 
+            padding:15px 0 15px 0; 
+            border-bottom: @b-grey 1px solid;
+        
+            a {  
+                color: @pale-green; 
+                text-decoration:none;
             }
         }
     }
