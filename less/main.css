@@ -1,0 +1,137 @@
+/*-- Imports --*/
+.header {
+  color: #bece95;
+  font-family: 'Cinzel Decorative', cursive;
+  font-size: 3.5rem;
+  text-align: center;
+}
+.body-copy {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1rem;
+  color: #353f13;
+}
+.small-text {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 0.8rem;
+  color: #bece95;
+  letter-spacing: 0.2rem;
+}
+/*-- Reset Rule --*/
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+/*---------- Font Families ----------*
+
+             Google Fonts 
+
+* Cinizel Decorative:   'Cinzel Decorative'
+* Josefin Sans:         'Josefin Sans'    
+			
+-----------------------------------*/
+/*--********************** Universal Styling (begin) ******************--*/
+/*-- (begin) Sticky Footer --*/
+html,
+body {
+  height: 100%;
+}
+body {
+  display: flex;
+  flex-direction: column;
+}
+.content {
+  flex: 1 0 auto;
+}
+.footer {
+  flex-shrink: 0;
+}
+/*-- (end) Sticky Footer --*/
+/*-- Body --*/
+/*-- Header --*/
+.guarantee {
+  margin-top: 50px;
+  margin-bottom: 80px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 0.8rem;
+  color: #bece95;
+  letter-spacing: 0.2rem;
+  text-align: center;
+}
+header {
+  background: #ccc url(../images/header-edit.jpg) no-repeat center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.top-logo {
+  width: 250px;
+  margin-left: 40px;
+}
+.nav-logo {
+  width: 120px;
+  margin-left: 30px;
+}
+h1 {
+  color: #bece95;
+  font-family: 'Cinzel Decorative', cursive;
+  font-size: 3.5rem;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 80px;
+}
+nav {
+  background-color: #90bc61;
+  font-family: 'Josefin Sans', sans-serif;
+  text-transform: uppercase;
+  font-size: 0.8em;
+}
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: inline-flex;
+}
+nav ul li {
+  padding: 30px;
+  font-weight: 500;
+}
+nav a {
+  text-decoration: none;
+  color: #353f13;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+/*-- Main --*/
+/*-- Footer --*/
+.social-icons ul {
+  text-align: center;
+}
+.social-icons ul li {
+  list-style-type: none;
+  display: inline;
+}
+.social-icons ul li a img {
+  margin: 30px 50px;
+  width: 50px;
+}
+/*--******************** Start 650 Media Query *********************--*/
+/*--********************* End 650 Media Query *********************--*/
+/*--******************** Start 950 Media Query *********************--*/
+/*--********************* End 950 Media Query *********************--*/
+/*--******************** Start 1250 Media Query *********************--*/
+/*--********************* End 950 Media Query *********************--*/
+/*--******************** Start 1500 Media Query *********************--*/
+/*--********************* End 1500 Media Query *********************--*/
