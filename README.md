@@ -26,7 +26,7 @@ ___
 (Insert any issues/difficulties experienced while coding and how the problem was solved)   
 
 * #### Issue 1:  
-   <p> (This is where you put your issue)  
+   <p> The Favicon will not appear in the web browser.
 
    #### Resolution:   
 ___

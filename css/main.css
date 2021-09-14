@@ -22,6 +22,19 @@
   padding: 0;
   border: 0;
 }
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
 /*---------- Font Families ----------*
 
              Google Fonts 
@@ -108,19 +121,6 @@ nav a {
   color: #353f13;
   padding-top: 80px;
   padding-bottom: 80px;
-}
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-main,
-nav,
-section,
-summary {
-  display: block;
 }
 /*-- Main --*/
 /*-- Footer --*/
