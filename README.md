@@ -15,11 +15,11 @@ ___
 
 (Insert any resources used in this area: whether for research, help with coding, or designs) .   
 
-* <p>Smith, G. _Hamburger Menu_  **https://codepen.io/g13nn/pen/eHGEF**  
+* <p>Glenn Smith. _Hamburger Menu_  **https://codepen.io/g13nn/pen/eHGEF**  
 
 * <p>W3 Schools. CSS Shadow Effects. https://www.w3schools.com/css/css3_shadows.asp  
 
-* <p>
+* <p>Scott Robbin. (2013). jQuery Backstretch. https://github.com/jquery-backstretch/jquery-backstretch
 
 ___
 

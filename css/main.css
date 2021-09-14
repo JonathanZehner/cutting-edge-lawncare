@@ -16,6 +16,10 @@
   color: #bece95;
   letter-spacing: .2rem;
 }
+.logo-left .home-header a {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
 .desktop-nav {
   background-color: #90bc61;
   display: -webkit-box;
@@ -183,7 +187,6 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: #cccec6 url(../images/header-edit.jpg) no-repeat center;
   background-attachment: fixed;
   background-size: cover;
   display: -webkit-box;
