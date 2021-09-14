@@ -12,9 +12,37 @@
 }
 .small-text {
   font-family: 'Josefin Sans', sans-serif;
-  font-size: 0.8rem;
+  font-size: .8rem;
   color: #bece95;
-  letter-spacing: 0.2rem;
+  letter-spacing: .2rem;
+}
+.desktop-nav {
+  background-color: #90bc61;
+  font-family: 'Josefin Sans', sans-serif;
+  text-transform: uppercase;
+  font-size: .8em;
+}
+.desktop-nav .nav-logo {
+  width: 120px;
+  margin-left: 30px;
+}
+.desktop-nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+.desktop-nav ul li {
+  padding: 30px;
+  font-weight: 500;
+}
+.desktop-nav ul li a {
+  text-decoration: none;
+  color: #353f13;
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 /*-- Reset Rule --*/
 * {
@@ -44,7 +72,7 @@ summary {
 			
 -----------------------------------*/
 /*--********************** Universal Styling (begin) ******************--*/
-/*-- (begin) Sticky Footer --*/
+/*-- Body --*/
 html,
 body {
   height: 100%;
@@ -67,32 +95,24 @@ body {
   -ms-flex-negative: 0;
       flex-shrink: 0;
 }
-/*-- (end) Sticky Footer --*/
-/*-- Body --*/
 /*-- Header --*/
-.guarantee {
-  margin-top: 50px;
-  margin-bottom: 80px;
-  font-family: 'Josefin Sans', sans-serif;
-  font-size: 0.8rem;
-  color: #bece95;
-  letter-spacing: 0.2rem;
-  text-align: center;
-}
-header {
-  background: #ccc url(../images/header-edit.jpg) no-repeat center;
+.home-header {
+  background: #cccccc url(../images/header-edit.jpg) no-repeat center;
   background-attachment: fixed;
   background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
 }
-.top-logo {
+.home-header .top-logo {
   width: 250px;
   margin-left: 40px;
 }
-.nav-logo {
-  width: 120px;
-  margin-left: 30px;
-}
-h1 {
+.home-header h1 {
   color: #bece95;
   font-family: 'Cinzel Decorative', cursive;
   font-size: 3.5rem;
@@ -100,29 +120,91 @@ h1 {
   margin-top: 50px;
   margin-bottom: 80px;
 }
-nav {
-  background-color: #90bc61;
+.home-header .guarantee {
+  margin-top: 50px;
+  margin-bottom: 80px;
   font-family: 'Josefin Sans', sans-serif;
-  text-transform: uppercase;
-  font-size: 0.8em;
+  font-size: .8rem;
+  color: #bece95;
+  letter-spacing: .2rem;
+  text-align: center;
 }
-nav ul {
-  list-style-type: none;
+.home-header .hamburger {
+  background: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  line-height: 45px;
+  padding: 5px 15px 0px 15px;
+  color: #999;
+  border: 0;
+  font-size: 1.4em;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+  z-index: 10000000000000;
+}
+.home-header .cross {
+  background: none;
+  position: absolute;
+  top: 0px;
+  right: 0;
+  padding: 7px 15px 0px 15px;
+  color: #999;
+  border: 0;
+  font-size: 3em;
+  line-height: 65px;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+  z-index: 10000000000000;
+}
+.home-header .menu {
+  z-index: 1000000;
+  font-weight: bold;
+  font-size: 0.8em;
+  width: 100%;
+  background: #f1f1f1;
+  position: absolute;
+  text-align: center;
+  font-size: 12px;
+}
+.home-header .menu ul {
   margin: 0;
   padding: 0;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  list-style-type: none;
+  list-style-image: none;
 }
-nav ul li {
-  padding: 30px;
-  font-weight: 500;
+.home-header .menu li {
+  display: block;
+  padding: 15px 0 15px 0;
+  border-bottom: #dddddd 1px solid;
 }
-nav a {
+.home-header .menu li:hover {
+  display: block;
+  background: #ffffff;
+  padding: 15px 0 15px 0;
+  border-bottom: #dddddd 1px solid;
+}
+.home-header .menu ul li a {
   text-decoration: none;
-  color: #353f13;
-  padding-top: 80px;
-  padding-bottom: 80px;
+  margin: 0px;
+  color: #666;
+}
+.home-header .menu ul li a:hover {
+  color: #666;
+  text-decoration: none;
+}
+.home-header .menu a {
+  text-decoration: none;
+  color: #666;
+}
+.home-header .menu a:hover {
+  text-decoration: none;
+  color: #666;
+}
+.home-header .desktop-nav {
+  display: none;
 }
 /*-- Main --*/
 /*-- Footer --*/

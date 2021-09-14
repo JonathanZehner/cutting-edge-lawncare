@@ -20,3 +20,36 @@
     color: @pale-green;
     letter-spacing: .2rem;
 }
+
+// Desktop Nav
+.desktop-nav {
+    background-color: @bg-kolor;
+    font-family: 'Josefin Sans', sans-serif;
+    text-transform: uppercase;
+    font-size: .8em;
+
+    .nav-logo {  //Nav-bar logo
+        width: 120px;
+        margin-left: 30px;
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: inline-flex;
+
+        li {
+            padding: 30px;
+            font-weight: 500;
+            
+            a {
+                text-decoration: none;
+                color: @text-color;
+                padding-top: 80px;
+                padding-bottom: 80px;
+            }
+        }
+    }
+}
+
