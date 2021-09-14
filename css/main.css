@@ -12,9 +12,9 @@
 }
 .small-text {
   font-family: 'Josefin Sans', sans-serif;
-  font-size: .8rem;
+  font-size: 0.8rem;
   color: #bece95;
-  letter-spacing: .2rem;
+  letter-spacing: 0.2rem;
 }
 /*-- Reset Rule --*/
 * {
@@ -74,13 +74,13 @@ body {
   margin-top: 50px;
   margin-bottom: 80px;
   font-family: 'Josefin Sans', sans-serif;
-  font-size: .8rem;
+  font-size: 0.8rem;
   color: #bece95;
-  letter-spacing: .2rem;
+  letter-spacing: 0.2rem;
   text-align: center;
 }
 header {
-  background: #cccccc url(../images/header-edit.jpg) no-repeat center;
+  background: #ccc url(../images/header-edit.jpg) no-repeat center;
   background-attachment: fixed;
   background-size: cover;
 }
@@ -104,7 +104,7 @@ nav {
   background-color: #90bc61;
   font-family: 'Josefin Sans', sans-serif;
   text-transform: uppercase;
-  font-size: .8em;
+  font-size: 0.8em;
 }
 nav ul {
   list-style-type: none;

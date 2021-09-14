@@ -15,7 +15,8 @@ ___
 
 (Insert any resources used in this area: whether for research, help with coding, or designs) .   
 
-* <p>(Cite resource here) . 
+* <p>Smith, G. _Hamburger Menu_  **https://codepen.io/g13nn/pen/eHGEF**  
+
 * <p>(Cite resource)   
 
 ___
