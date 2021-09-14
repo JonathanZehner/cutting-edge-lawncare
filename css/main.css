@@ -71,7 +71,8 @@ body {
 /*-- Body --*/
 /*-- Header --*/
 .guarantee {
-  margin-top: 80px;
+  margin-top: 50px;
+  margin-bottom: 80px;
   font-family: 'Josefin Sans', sans-serif;
   font-size: .8rem;
   color: #bece95;
@@ -96,6 +97,7 @@ h1 {
   font-family: 'Cinzel Decorative', cursive;
   font-size: 3.5rem;
   text-align: center;
+  margin-top: 50px;
   margin-bottom: 80px;
 }
 nav {
@@ -124,6 +126,17 @@ nav a {
 }
 /*-- Main --*/
 /*-- Footer --*/
+.social-icons ul {
+  text-align: center;
+}
+.social-icons ul li {
+  list-style-type: none;
+  display: inline;
+}
+.social-icons ul li a img {
+  margin: 30px 50px;
+  width: 50px;
+}
 /*--******************** Start 650 Media Query *********************--*/
 /*--********************* End 650 Media Query *********************--*/
 /*--******************** Start 950 Media Query *********************--*/
