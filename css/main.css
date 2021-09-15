@@ -171,6 +171,9 @@ body {
   height: 100%;
 }
 body {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1rem;
+  color: #353f13;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -183,10 +186,6 @@ body {
   -webkit-box-flex: 1;
       -ms-flex: 1 0 auto;
           flex: 1 0 auto;
-}
-.footer {
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
 }
 /*-- Header --*/
 .home-header {
@@ -296,6 +295,10 @@ body {
 }
 /*-- Main --*/
 /*-- Footer --*/
+.footer {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
 .social-icons ul {
   text-align: center;
 }
