@@ -137,6 +137,10 @@
   color: #bece95;
   text-decoration: none;
 }
+.img-md {
+  max-width: 500px;
+  width: 100%;
+}
 /*-- Reset Rule --*/
 * {
   margin: 0;
@@ -292,6 +296,10 @@ body {
 }
 .home-header .desktop-nav {
   display: none;
+}
+.home-about {
+  max-width: 500px;
+  width: 100%;
 }
 /*-- Main --*/
 /*-- Footer --*/
