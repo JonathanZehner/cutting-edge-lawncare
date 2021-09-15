@@ -376,10 +376,12 @@ button {
   -webkit-box-direction: normal;
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
+  padding: 10px 15px;
+}
+.home-services {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 10px 15px;
 }
 .home-services h3 {
   color: #a1d73f;
@@ -421,6 +423,15 @@ button {
   -webkit-box-shadow: 1px 1px 3px #10110c;
           box-shadow: 1px 1px 3px #10110c;
   margin: 10px 15px;
+}
+.home-portfolio {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.home-portfolio .m li img {
+  max-width: 150px;
+  width: 100%;
 }
 /*-- Main --*/
 /*-- Footer --*/
