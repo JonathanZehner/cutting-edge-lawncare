@@ -116,6 +116,9 @@ button {
 }
 
 .home-services {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
     padding: @pad;
 
     h3 {
@@ -133,8 +136,16 @@ button {
     }
 
     .four-grid {
-        .grid-4();
-        .img-sm();
+        display: flex;
+        flex-flow: column wrap;
+        margin-top: 25px;
+        padding: 10px 0;
+
+
+        img {
+            .grid-4();
+
+        }
     }
 }
 

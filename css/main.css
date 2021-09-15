@@ -138,7 +138,7 @@
   text-decoration: none;
 }
 .img-sm {
-  max-width: 100px;
+  max-width: 150px;
   width: 100%;
 }
 .img-md {
@@ -150,8 +150,11 @@
   width: 100%;
 }
 .grid-4 {
-  max-width: 100px;
+  max-width: 150px;
   width: 100%;
+  -webkit-box-shadow: 1px 1px 3px #10110c;
+          box-shadow: 1px 1px 3px #10110c;
+  margin: 10px 15px;
 }
 .h2 {
   color: #353f13;
@@ -361,6 +364,16 @@ button {
   text-align: center;
 }
 .home-services {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding: 10px 15px;
 }
 .home-services h3 {
@@ -387,8 +400,22 @@ button {
   width: 50%;
 }
 .home-services .four-grid {
-  max-width: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  margin-top: 25px;
+  padding: 10px 0;
+}
+.home-services .four-grid img {
+  max-width: 150px;
   width: 100%;
+  -webkit-box-shadow: 1px 1px 3px #10110c;
+          box-shadow: 1px 1px 3px #10110c;
+  margin: 10px 15px;
 }
 /*-- Main --*/
 /*-- Footer --*/
