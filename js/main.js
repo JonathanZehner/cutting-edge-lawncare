@@ -1,2 +1,2 @@
 // Backstretch
-$(".home-header").backstretch("../images/header-edit.jpg");
+$(".home-header").backstretch("../images/hero_index.jpg");
