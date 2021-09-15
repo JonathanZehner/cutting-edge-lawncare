@@ -43,6 +43,14 @@ body {
 
 // (end) Sticky Footer
 
+.h2, .h3, .h4, .h5, .h6 {
+    text-align: center;
+}
+
+button {
+    .btn();
+}
+
 
 /*-- Header --*/
 .home-header {
@@ -93,12 +101,42 @@ body {
     }
 }
 
+
+
 .home-about {
-    .img-md();
-     
-    
+    padding: @pad;
+
+    img {
+        .img-md();
+    }
+
+    h2 {
+        .h2();
+    }
 }
 
+.home-services {
+    padding: @pad;
+
+    h3 {
+        .h3();
+    }
+
+    .two-col {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+    
+        .left-col, .rt-col {
+            width: 50%;
+        }
+    }
+
+    .four-grid {
+        .grid-4();
+        .img-sm();
+    }
+}
 
 
 

@@ -137,9 +137,47 @@
   color: #bece95;
   text-decoration: none;
 }
+.img-sm {
+  max-width: 100px;
+  width: 100%;
+}
 .img-md {
   max-width: 500px;
   width: 100%;
+}
+.img-lg {
+  max-width: 700px;
+  width: 100%;
+}
+.grid-4 {
+  max-width: 100px;
+  width: 100%;
+}
+.h2 {
+  color: #353f13;
+  font: normal 400 2rem/1.5 'Cinzel Decorative', sans-serif;
+  margin-top: 25px;
+}
+.h3 {
+  color: #a1d73f;
+  font: normal 400 1.5rem/1.5 'Cinzel Decorative', sans-serif;
+  margin-top: 25px;
+  text-shadow: 1px 1px 2px #10110c;
+}
+.h4 {
+  color: #353f13;
+  font: normal 400 1.25rem/1.5 'Cinzel Decorative', sans-serif;
+  margin-top: 25px;
+}
+.h5 {
+  color: #353f13;
+  font: normal 400 1rem/1.5 'Cinzel Decorative', sans-serif;
+  margin-top: 25px;
+}
+.btn {
+  background-color: #f3b350;
+  border-radius: 5px;
+  padding: 10px 15px;
 }
 /*-- Reset Rule --*/
 * {
@@ -190,6 +228,18 @@ body {
   -webkit-box-flex: 1;
       -ms-flex: 1 0 auto;
           flex: 1 0 auto;
+}
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  text-align: center;
+}
+button {
+  background-color: #f3b350;
+  border-radius: 5px;
+  padding: 10px 15px;
 }
 /*-- Header --*/
 .home-header {
@@ -298,7 +348,46 @@ body {
   display: none;
 }
 .home-about {
+  padding: 10px 15px;
+}
+.home-about img {
   max-width: 500px;
+  width: 100%;
+}
+.home-about h2 {
+  color: #353f13;
+  font: normal 400 2rem/1.5 'Cinzel Decorative', sans-serif;
+  margin-top: 25px;
+  text-align: center;
+}
+.home-services {
+  padding: 10px 15px;
+}
+.home-services h3 {
+  color: #a1d73f;
+  font: normal 400 1.5rem/1.5 'Cinzel Decorative', sans-serif;
+  margin-top: 25px;
+  text-shadow: 1px 1px 2px #10110c;
+  text-align: center;
+}
+.home-services .two-col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.home-services .two-col .left-col,
+.home-services .two-col .rt-col {
+  width: 50%;
+}
+.home-services .four-grid {
+  max-width: 100px;
   width: 100%;
 }
 /*-- Main --*/

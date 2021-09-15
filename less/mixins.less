@@ -145,8 +145,55 @@
 }
 
 // Image Mixins
+.img-sm {
+    max-width: @img-sm;
+    width: 100%;
+}
 
 .img-md {
     max-width: @img-md;
     width: 100%;
+}
+
+.img-lg {
+    max-width: @img-lg;
+    width: 100%;
+}
+
+.grid-4 {
+    .img-sm();
+
+}
+
+// Heading Mixins
+.h2 {
+    color: @dark-green;
+    font: normal 400 2rem/1.5 'Cinzel Decorative', sans-serif;
+    margin-top: 25px;
+}
+
+.h3 {
+    color: @bright-green;
+    font: normal 400 1.5rem/1.5 'Cinzel Decorative', sans-serif;
+    margin-top: 25px;
+    text-shadow: @shadow;
+}
+
+.h4 {
+    color: @dark-green;
+    font: normal 400 1.25rem/1.5 'Cinzel Decorative', sans-serif;
+    margin-top: 25px;
+}
+
+.h5 {
+    color: @dark-green;
+    font: normal 400 1rem/1.5 'Cinzel Decorative', sans-serif;
+    margin-top: 25px;
+}
+
+// Button Mixin
+.btn {
+    background-color: @btn;
+    border-radius: 5px;
+    padding: @pad;
 }
