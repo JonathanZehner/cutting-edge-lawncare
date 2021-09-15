@@ -149,6 +149,10 @@
   max-width: 700px;
   width: 100%;
 }
+.thumbnail {
+  max-width: 50px;
+  width: 100%;
+}
 .grid-4 {
   max-width: 150px;
   width: 100%;
@@ -363,7 +367,8 @@ button {
   margin-top: 25px;
   text-align: center;
 }
-.home-services {
+.home-services,
+.home-portfolio {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
