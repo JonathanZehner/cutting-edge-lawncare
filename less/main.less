@@ -103,6 +103,40 @@ button {
 
 
 // About
+
+// Desktop Nav Menu
+.desktop-nav {
+    background-color: @bg-kolor;
+    display: flex;
+    flex-flow: row nowrap;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: .8rem;
+    text-transform: uppercase;
+
+    .nav-logo {  //Nav-bar logo
+        width: 120px;
+        margin-left: 30px;
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: inline-flex;
+
+        li {
+            padding: 30px;
+            font-weight: 500;
+            
+            a {
+                text-decoration: none;
+                color: @text-color;
+                padding-top: 80px;
+                padding-bottom: 80px;
+            }
+        }
+    }
+}
 .home-about {
     padding: @pad;
 
