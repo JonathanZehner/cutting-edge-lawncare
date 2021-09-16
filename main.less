@@ -105,14 +105,15 @@ button {
 
 // About
 
-    .about-header {
-        align-items: center;
-        background-image: url("../images/about_top_banner.jpg");
-        background-attachment: fixed;
-        background-size: cover;
-        display: flex;
-        flex-flow: column nowrap;
-        height: 80vh;
+    .about-banner {
+        width: 80%;
+    }
+
+    .about-img {
+        border-radius: 10em;
+        width: 50%;
+        float: right;
+    }
 
     h1 {
         .header();
@@ -126,25 +127,25 @@ button {
         text-align: center;
     }
 
-    ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        display: inline-flex;
-
-        li {
-            padding: 30px;
-            font-weight: 500;
-            
-            a {
-                text-decoration: none;
-                color: @text-color;
-                padding-top: 80px;
-                padding-bottom: 80px;
-            }
+    section {
+        p {
+            padding: 10px 50px;
+            margin-bottom: 100px;
         }
     }
-}
+
+    .about-logo {
+        margin: 0 auto;
+        width: 40%;
+    }
+
+    .about-button {
+        margin-bottom: 20px;
+        a {
+            color: @text-color;
+            text-decoration: none;
+        }
+    }
 
 .home-about {
     padding: @pad;
@@ -292,6 +293,20 @@ button {
 /*-- Footer --*/
 .footer {
     flex-shrink: 0;
+
+    ul {
+        margin-top: 50px;
+        text-align: center;
+        li {
+            display: inline;
+            list-style-type: none;
+            padding: 10px 30px;
+        }
+    }
+}
+
+.copyright {
+    margin-bottom: -110px;
 }
 
 .social-icons {
@@ -299,10 +314,10 @@ button {
         text-align: center;
         li {
             list-style-type: none;
-            display: inline;
+            display: inline-flex;
             a {
                 img {
-                    margin: 30px 50px;
+                    margin: 5px 20px;
                     width: 50px;
                 }
 
