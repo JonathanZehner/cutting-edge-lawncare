@@ -23,7 +23,13 @@ ___
 
 * <p>Rao J. Guruprasad. (May 8, 2015). jQuery backstretch plugin won't work at all [answered on Stack Overflow]. https://stackoverflow.com/questions/30115447/jquery-backstretch-plugin-wont-work-at-all-new-to-programming  
 
-* <p>Maciej Leszczynski. (2019). Pure CSS 3D Gallery Markdown. https://gist.github.com/CodeMyUI/fe2b8a81eb59a686d70cf44ff56d1413
+* <p>Maciej Leszczynski. (2019). Pure CSS 3D Gallery Markdown. https://gist.github.com/CodeMyUI/fe2b8a81eb59a686d70cf44ff56d1413  
+
+* <p>Bootstrap. Components. https://getbootstrap.com/docs/5.1/getting-started/introduction/  
+
+* <p>Premium Lawn Service, LLC. (2021). Customer testimonials. https://www.premiumlawnservice.com/customerTestimonials.php  
+
+
 
 ___
 
