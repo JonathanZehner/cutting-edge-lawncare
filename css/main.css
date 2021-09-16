@@ -243,7 +243,6 @@ button {
   background-size: cover;
   display: flex;
   flex-flow: column nowrap;
-  height: 80vh;
 }
 .home-header .hero-banner .top-logo {
   width: 250px;
@@ -334,11 +333,13 @@ button {
   display: none;
 }
 .about-banner {
+  margin: 0 auto;
   width: 80%;
 }
 .about-img {
   border-radius: 10em;
-  width: 50%;
+  margin: 0 40px 40px 40px;
+  width: 400px;
   float: right;
 }
 h1 {
@@ -357,12 +358,16 @@ h1 {
   letter-spacing: 0.2rem;
   text-align: center;
 }
+section {
+  width: 100%;
+}
 section p {
   padding: 10px 50px;
   margin-bottom: 100px;
 }
 .about-logo {
   margin: 0 auto;
+  padding-left: 5%;
   width: 40%;
 }
 .about-button {
@@ -519,7 +524,10 @@ section p {
   padding: 10px 30px;
 }
 .copyright {
-  margin-bottom: -110px;
+  margin-bottom: 0;
+}
+.foot-img {
+  width: 100%;
 }
 .social-icons ul {
   text-align: center;
