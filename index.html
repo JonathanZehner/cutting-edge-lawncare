@@ -271,34 +271,134 @@
                     </article>
                 </section>
             
-                <section>
-                    <h2>Another Heading</h2>
-                    <p>Some more text. Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim eius odio non impedit sequi
-                        suscipit aut! Praesentium fuga impedit, nam, sit doloribus minima aut, necessitatibus tempora ducimus quos
-                        debitis tenetur?</p>
-                    <div>
-                        <section class="pkg-hdr">
-                            <h4>Premium Package</h4>
-                            <p>Place holder text. Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-                        </section>
-                        <section>
-                            <p>Place holder text</p>
-                            <h5>$49</h5>
-                            <p>Place holder text</p>
-            
-                            <h4>Includes:</h4>
-                            <p>Place holder text.</p>
-                            <ul>
-                                <li>Place holder text</li>
-                                <li>Place holder text</li>
-                                <li>Place holder text</li>
-                                <li>Place holder text</li>
-                                <li>Place holder text</li>
-                                <li>Place holder text</li>
-                            </ul>
-            
-                            <button>Select this package!</button>
-                        </section>
+                <section class="pricing-plans">
+                    <h2>Choose A Plan</h2>
+                    <p>Some more text. Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim eius odio non impedit sequi suscipit aut! Praesentium fuga impedit, nam, sit doloribus minima aut, necessitatibus tempora ducimus quos debitis tenetur?</p>
+
+                    <!-- Bootstrap Accordion: Plan Pricing -->
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <!-- One -->
+                        <div class="accordion-item">
+                            <h4 class="accordion-header" id="flush-headingOne">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                    Premium Package
+                                </button>
+                            </h4>
+
+                            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <div class="card text-center">
+                                        <div class="card-hdr">
+                                            <h4>Premium</h4>
+                                            <p>Place holder text. Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                                        </div>
+                                        <div class="card-body">
+                                            <p class="card-text">Place holder text</p>
+                                            <h5 class="card-title">$49</h5>
+                                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                            <div class="includes">
+                                                <h4>Includes:</h4>
+                                                <p>Place holder text with some description of what is included.</p>
+                                                <ul>
+                                                    <li>Place holder text</li>
+                                                    <li>Place holder text</li>
+                                                    <li>Place holder text</li>
+                                                    <li>Place holder text</li>
+                                                    <li>Place holder text</li>
+                                                    <li>Place holder text</li>
+                                                </ul>
+                                            </div>
+                                            <a href="#" class="btn btn-primary">Select this package!</a>
+                                        </div>
+                                        <div class="card-footer text-muted">
+                                            Our most popular plan!
+                                        </div>
+                                    </div> 
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Two -->
+                        <div class="accordion-item">
+                            <h4 class="accordion-header" id="flush-headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                    Basic Package
+                                </button>
+                            </h4>
+
+                            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <div class="card text-center">
+                                        <div class="card-hdr">
+                                            <h4>Basic</h4>
+                                            <p>Place holder text. Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                                        </div>
+                                        <div class="card-body">
+                                            <p class="card-text">Place holder text</p>
+                                            <h5 class="card-title">$39</h5>
+                                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                            <div class="includes">
+                                                <h4>Includes:</h4>
+                                                <p>Everything in the Basic plan plus</p>
+                                                <ul>
+                                                    <li>Place holder text</li>
+                                                    <li>Place holder text</li>
+                                                    <li>Place holder text</li>
+                                                    <li>Place holder text</li>
+                                                    <li>Place holder text</li>
+                                                    <li>Place holder text</li>
+                                                </ul>
+                                            </div>
+                                            <a href="#" class="btn btn-primary">Select this package!</a>
+                                        </div>
+                                        <div class="card-footer text-muted">
+                                            Our most budget friendly plan!
+                                        </div>
+                                    </div> 
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Three -->
+                        <div class="accordion-item">
+                            <h4 class="accordion-header" id="flush-headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                    Platinum Package
+                                </button>
+                            </h4>
+
+                            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <div class="card text-center">
+                                        <div class="card-hdr">
+                                            <h4>Platinum</h4>
+                                            <p>Place holder text. Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                                        </div>
+                                        <div class="card-body">
+                                            <p class="card-text">Place holder text</p>
+                                            <h5 class="card-title">$79</h5>
+                                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                            <div class="includes">
+                                                <h4>Includes:</h4>
+                                                <p>Everything in the Basic and Premium plans plus</p>
+                                                <ul>
+                                                    <li>Place holder text</li>
+                                                    <li>Place holder text</li>
+                                                    <li>Place holder text</li>
+                                                    <li>Place holder text</li>
+                                                    <li>Place holder text</li>
+                                                    <li>Place holder text</li>
+                                                </ul>
+                                            </div>
+                                            <a href="#" class="btn btn-primary">Select this package!</a>
+                                        </div>
+                                        <div class="card-footer text-muted">
+                                            Best Value!
+                                        </div>
+                                    </div> 
+                                </div>
+                            </div>
+                        </div>                        
                     </div>
                 </section>
             </main>

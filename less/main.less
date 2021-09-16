@@ -102,7 +102,7 @@ button {
 }
 
 
-
+// About
 .home-about {
     padding: @pad;
 
@@ -121,6 +121,7 @@ button {
     padding: @pad;
 }
 
+// Services
 .home-services {
     justify-content: center;
 
@@ -150,6 +151,7 @@ button {
     }
 }
 
+// Portfolio and Testimonials
 .home-portfolio {
     justify-content: space-between;
 
@@ -184,12 +186,59 @@ button {
             width: 75%;
         }
     }
-
-
-
 }
 
+// Plans
+.pricing-plans {
+    h2 {
+        .h2();
+    }
 
+    p {
+        padding: @pad;
+    }
+
+    .accordion {
+        h4 {
+            .h4();
+        }
+        .card-hdr {
+            background-color: @b-grn-lt;
+
+            h4 {
+                .h4();
+                color: @pale-green;
+                font-size: 2rem;
+                text-shadow: @txt-shdw;
+            }
+        }
+
+        .card-body {
+            h5 {
+                .h5();
+                margin-top: 0;
+            }
+
+            p {
+                line-height: normal;
+                margin-bottom: 0;
+            }
+
+            .includes {
+                margin-top: 25px;
+
+                h4 {
+                    .h4();
+                }
+
+                ul {
+                    list-style-type: none;
+                    padding-left: 0;
+                }
+            }
+        }
+    }
+}
 
 
 
