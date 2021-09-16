@@ -174,8 +174,9 @@
 }
 .btn {
   background-color: #f3b350;
-  border-radius: 5px;
+  border-radius: 50px;
   padding: 10px 15px;
+  margin: 50px;
 }
 /*-- Reset Rule --*/
 * {
@@ -229,8 +230,10 @@ body {
 }
 button {
   background-color: #f3b350;
-  border-radius: 5px;
+  border-radius: 50px;
   padding: 10px 15px;
+  color: #353f13;
+  margin: 50px;
 }
 /*-- Header --*/
 .home-header {
@@ -250,7 +253,6 @@ button {
   font-size: 3.5rem;
   text-align: center;
   margin-top: 50px;
-  text-shadow: 1px 1px 2px #10110c, 0 0 25px #cccec6, 0 0 5px #a1d73f;
 }
 .home-header .guarantee {
   margin-top: 15px;
@@ -260,7 +262,6 @@ button {
   color: #bece95;
   letter-spacing: 0.2rem;
   text-align: center;
-  text-shadow: 1px 1px 2px #10110c, 0 0 25px #cccec6, 0 0 5px #a1d73f;
 }
 .home-header .hamburger {
   background: #bece955b;
@@ -330,6 +331,34 @@ button {
 }
 .home-header .desktop-nav {
   display: none;
+}
+.desktop-nav {
+  background-color: #90bc61;
+  display: flex;
+  flex-flow: row nowrap;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}
+.desktop-nav .nav-logo {
+  width: 120px;
+  margin-left: 30px;
+}
+.desktop-nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: inline-flex;
+}
+.desktop-nav ul li {
+  padding: 30px;
+  font-weight: 500;
+}
+.desktop-nav ul li a {
+  text-decoration: none;
+  color: #353f13;
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 .home-about {
   padding: 10px 15px;
@@ -438,7 +467,6 @@ button {
   text-align: center;
   color: #bece95;
   font-size: 2rem;
-  text-shadow: 1px 1px 2px #10110c, 0 0 25px #cccec6, 0 0 5px #a1d73f;
 }
 .pricing-plans .accordion .card-body h5 {
   color: #353f13;
