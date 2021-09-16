@@ -5,6 +5,10 @@
 
 /*--**** 768 Min-Width Media Query ****--*/
 @media (min-width: 768px) {
+  .carousel {
+    display: none;
+  }
+  
   .mq-sz {
     display: block;
   }
