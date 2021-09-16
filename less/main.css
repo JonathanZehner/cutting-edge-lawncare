@@ -174,9 +174,9 @@
 }
 .btn {
   background-color: #f3b350;
-  border-radius: 50px;
+  border-radius: 5px;
   padding: 10px 15px;
-  margin: 50px;
+  margin: 30px;
 }
 /*-- Reset Rule --*/
 * {
@@ -230,8 +230,9 @@ body {
 }
 button {
   background-color: #f3b350;
-  border-radius: 50px;
+  border-radius: 5px;
   padding: 10px 15px;
+  margin: 30px;
   color: #353f13;
   margin: 50px;
 }
@@ -332,29 +333,42 @@ button {
 .home-header .desktop-nav {
   display: none;
 }
-.desktop-nav {
-  background-color: #90bc61;
+.about-header {
+  align-items: center;
+  background-image: url("../images/about_top_banner.jpg");
+  background-attachment: fixed;
+  background-size: cover;
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: column nowrap;
+  height: 80vh;
+}
+.about-header h1 {
+  color: #bece95;
+  font-family: 'Cinzel Decorative', sans-serif;
+  font-size: 3.5rem;
+  text-align: center;
+  margin-top: 50px;
+}
+.about-header .guarantee {
+  margin-top: 15px;
+  margin-bottom: 115px;
   font-family: 'Josefin Sans', sans-serif;
   font-size: 0.8rem;
-  text-transform: uppercase;
+  color: #bece95;
+  letter-spacing: 0.2rem;
+  text-align: center;
 }
-.desktop-nav .nav-logo {
-  width: 120px;
-  margin-left: 30px;
-}
-.desktop-nav ul {
+.about-header ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   display: inline-flex;
 }
-.desktop-nav ul li {
+.about-header ul li {
   padding: 30px;
   font-weight: 500;
 }
-.desktop-nav ul li a {
+.about-header ul li a {
   text-decoration: none;
   color: #353f13;
   padding-top: 80px;
@@ -468,27 +482,27 @@ button {
   color: #bece95;
   font-size: 2rem;
 }
-.pricing-plans .accordion .card-body h5 {
+.pricing-plans .card-body h5 {
   color: #353f13;
   font: normal 400 4rem/1 'Cinzel Decorative', sans-serif;
   margin-top: 25px;
   text-align: center;
   margin-top: 0;
 }
-.pricing-plans .accordion .card-body p {
+.pricing-plans .card-body p {
   line-height: normal;
   margin-bottom: 0;
 }
-.pricing-plans .accordion .card-body .includes {
+.pricing-plans .card-body .includes {
   margin-top: 25px;
 }
-.pricing-plans .accordion .card-body .includes h4 {
+.pricing-plans .card-body .includes h4 {
   color: #353f13;
   font: normal 400 1.25rem/1.5 'Cinzel Decorative', sans-serif;
   margin-top: 25px;
   text-align: center;
 }
-.pricing-plans .accordion .card-body .includes ul {
+.pricing-plans .card-body .includes ul {
   list-style-type: none;
   padding-left: 0;
 }
@@ -508,11 +522,15 @@ button {
   margin: 30px 50px;
   width: 50px;
 }
+/*-- Start 650 Media Query --*/
 /*--******************** Start 650 Media Query *********************--*/
-/*--********************* End 650 Media Query *********************--*/
-/*--******************** Start 950 Media Query *********************--*/
+/*-- End 650 Media Query --*/
+/*--* Start 950 Media Query --*/
 /*--********************* End 950 Media Query *********************--*/
-/*--******************** Start 1250 Media Query *********************--*/
+/*-- End 950 Media Query --*/
+/*-- Start 1250 Media Query --*/
 /*--********************* End 950 Media Query *********************--*/
 /*--******************** Start 1500 Media Query *********************--*/
+/*-- Start 1500 Media Query --*/
 /*--********************* End 1500 Media Query *********************--*/
+/*-- End 1500 Media Query --*/
