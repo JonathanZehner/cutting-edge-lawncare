@@ -429,9 +429,24 @@ button {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-.home-portfolio .m li img {
-  max-width: 150px;
-  width: 100%;
+.home-portfolio .carousel {
+  border: 3px solid #10110c;
+  border-radius: 5px;
+}
+.home-portfolio .article-pf {
+  background-color: #bece9594;
+  border-radius: 5px;
+  margin: 25px auto;
+}
+.home-portfolio .article-pf h2,
+.home-portfolio .article-pf p {
+  padding: 10px 15px;
+}
+.home-portfolio .article-pf h2 {
+  color: #353f13;
+  font: normal 400 2rem/1.5 'Cinzel Decorative', sans-serif;
+  margin-top: 25px;
+  text-align: center;
 }
 /*-- Main --*/
 /*-- Footer --*/

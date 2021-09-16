@@ -153,12 +153,26 @@ button {
 .home-portfolio {
     justify-content: space-between;
 
-    .m {
-        li {
-            img {
-                .img-sm();
-            }
+    .carousel {
+        border: 3px solid @b-blk;
+        border-radius: 5px;
+    }
+
+    .article-pf {
+        background-color: #bece9594;
+        border-radius: 5px;
+        margin: 25px auto;
+
+        h2, p {
+            padding: @pad;
         }
+
+        h2 {
+            .h2();
+            text-align: center;
+        }
+
+        
     }
 }
 
