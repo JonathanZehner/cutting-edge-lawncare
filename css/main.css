@@ -354,6 +354,7 @@ button {
 .home-header .desktop-nav {
   display: none;
 }
+/*-- Main --*/
 .home-about {
   padding: 10px 15px;
 }
@@ -509,9 +510,9 @@ button {
   list-style-type: none;
   padding-left: 0;
 }
-/*-- Main --*/
 /*-- Footer --*/
 .footer {
+  background: #ffffff url(../images/footer_edger.jpeg) no-repeat bottom;
   -ms-flex-negative: 0;
       flex-shrink: 0;
 }
