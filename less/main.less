@@ -205,6 +205,10 @@ button {
 .home-portfolio {
     justify-content: space-between;
 
+    .carousel-control-prev, .carousel-control-next {
+        margin: 0 0;
+    }
+
     .c-border {
         border: 3px solid @b-blk;
         border-radius: 5px;
@@ -302,6 +306,7 @@ button {
     border-radius: 5px;
     color: @text-color;
     float: right;
+    margin-right: 20px;
     padding: @pad;
 }
 
@@ -309,8 +314,18 @@ button {
 .footer {
     flex-shrink: 0;
 
-    .foot-info img {
-        .img-md();        
+    .foot-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+ 
+        .foot-image {
+            .img-md();
+        }
+        
+        .img-fluid {
+            width: 100%;
+        }
     }
 
     ul {
@@ -356,30 +371,42 @@ button {
 
 
 
-/*-- Start 650 Media Query --*/
+/*-- Start 530 Media Query --*/
+@media (min-width: 530px) {
 
-/*--******************** Start 650 Media Query *********************--*/
+    
+    .four-grid {
+        align-items: center;
+        flex-flow: row wrap;
+        height: 300px;
+        justify-content: center;
+        width: 375px;
+    }
+
+    .home-portfolio {
+        .testimonials {
+            height: 450px;
+
+        }
+    }
+}
 
 
-/*-- End 650 Media Query --*/
+/*-- End 530 Media Query --*/
 
 /*--* Start 950 Media Query --*/
 
 
-/*--********************* End 950 Media Query *********************--*/
 
 /*-- End 950 Media Query --*/
 
 /*-- Start 1250 Media Query --*/
 
 
-/*--********************* End 950 Media Query *********************--*/
-
-/*--******************** Start 1500 Media Query *********************--*/
+/*-- End 1250 Media Query --*/
 
 /*-- Start 1500 Media Query --*/
 
 
-/*--********************* End 1500 Media Query *********************--*/
 
 /*-- End 1500 Media Query --*/
