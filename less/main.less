@@ -373,8 +373,15 @@ button {
 
 /*-- Start 530 Media Query --*/
 @media (min-width: 530px) {
+    .home-about {
+        display: flex;
+        flex-direction: column;
 
-    
+        img {
+            align-self: center;
+        }
+    }
+
     .four-grid {
         align-items: center;
         flex-flow: row wrap;
@@ -389,16 +396,40 @@ button {
 
         }
     }
+
+    .footer .foot-info .foot-image {
+        align-self: center;
+    }
+}
+/*-- End 530 Media Query --*/
+
+/*--* Start 750 Media Query --*/
+@media (min-width: 750px) {
+    .hamburger, .cross, .ham-menu {
+        display: none;
+    }
+
+    .home-header .desktop-nav {
+        align-items: center;
+        display: flex;
+        flex-flow: column nowrap;
+        padding-top: 15px;
+        width: 100vw;
+
+        .dn-container {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+            width: 100%;
+        }
+    }
+
+
+
 }
 
 
-/*-- End 530 Media Query --*/
-
-/*--* Start 950 Media Query --*/
-
-
-
-/*-- End 950 Media Query --*/
+/*-- End 750 Media Query --*/
 
 /*-- Start 1250 Media Query --*/
 
