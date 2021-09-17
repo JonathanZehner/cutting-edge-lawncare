@@ -332,9 +332,6 @@ button {
 .home-header .desktop-nav {
   display: none;
 }
-<<<<<<< HEAD
-/*-- Main --*/
-=======
 .about-banner {
   margin: 0 auto;
   width: 80%;
@@ -380,7 +377,6 @@ section p {
   color: #353f13;
   text-decoration: none;
 }
->>>>>>> aa0458d6bbf1fe4cde281fefdda778585d66932c
 .home-about {
   padding: 10px 15px;
 }
@@ -515,11 +511,6 @@ section p {
 }
 /*-- Footer --*/
 .footer {
-<<<<<<< HEAD
-  background: #ffffff url(../images/footer_edger.jpeg) no-repeat bottom;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
-=======
   flex-shrink: 0;
 }
 .footer ul {
@@ -536,7 +527,6 @@ section p {
 }
 .foot-img {
   width: 100%;
->>>>>>> aa0458d6bbf1fe4cde281fefdda778585d66932c
 }
 .social-icons ul {
   text-align: center;

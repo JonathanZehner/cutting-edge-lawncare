@@ -35,7 +35,8 @@ body {
     .body-copy();
     display: flex;
     flex-direction: column;
-    
+    overflow-x: hidden;
+
 }
 
 .content {
@@ -103,6 +104,7 @@ button {
 
 /*-- Main --*/
 // About
+.home-about {
 
     .about-banner {
         margin: 0 auto;
@@ -149,6 +151,7 @@ button {
             text-decoration: none;
         }
     }
+}
 
 .home-about {
     padding: @pad;
@@ -237,6 +240,8 @@ button {
 
 // Plans
 .pricing-plans {
+    max-width: 1000px;
+
     h2 {
         .h2();
     }
@@ -248,7 +253,14 @@ button {
     .accordion {
         h4 {
             .h4();
+
+            .accordion-button {
+                width: 100%;
+                margin: 0;
+                align-self: flex-start;
+            }
         }
+
         .card-hdr {
             background-color: @b-grn-lt;
 
@@ -279,7 +291,7 @@ button {
                 }
 
                 ul {
-                    list-style-type: none;
+                    // list-style-type: none;
                     padding-left: 0;
                 }
             }
@@ -291,6 +303,11 @@ button {
     background: white url(../images/footer_edger.jpeg) no-repeat bottom;
     flex-shrink: 0;
 
+    .foot-info img {
+        width: 100vw;
+        
+    }
+
     ul {
         margin-top: 50px;
         text-align: center;
@@ -300,32 +317,32 @@ button {
             padding: 10px 30px;
         }
     }
-}
 
-.copyright {
-    margin-bottom: 0;
-}
 
-.foot-img {
-    width: 100%;
-}
+    .social-icons {
+        ul {
+            text-align: center;
+            li {
+                list-style-type: none;
+                display: inline-flex;
+                a {
+                    img {
+                        margin: 5px 20px;
+                        width: 50px;
+                    }
 
-.social-icons {
-    ul {
-        text-align: center;
-        li {
-            list-style-type: none;
-            display: inline-flex;
-            a {
-                img {
-                    margin: 5px 20px;
-                    width: 50px;
                 }
-
             }
         }
     }
+
+    .copyright {
+        margin-bottom: 0;
+    }
 }
+
+
+
 
 /*-- Start 650 Media Query --*/
 
