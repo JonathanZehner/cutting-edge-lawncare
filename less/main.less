@@ -80,13 +80,68 @@ button {
     margin: 50px;
 }
 
-/*--=========================================================--*/
+// Universal Footer Styling
+.footer {
+    flex-shrink: 0;
 
-/*--=================== HOME PAGE STYLING ===================--*/
+    .foot-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+ 
+        .foot-image {
+            .img-md();
+        }
+        
+        .img-fluid {
+            width: 100%;
+        }
+    }
+
+    ul {
+        margin-top: 50px;
+        text-align: center;
+        padding: 0;
+        li {
+            display: inline;
+            list-style-type: none;
+            padding: 10px 30px;
+        }
+    }
+
+
+    .social-icons {
+        ul {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: center;
+            margin-bottom: 50px;
+            
+
+            li {
+                list-style-type: none;
+                padding: 0 0;
+                a {
+                    img {
+                        margin: 5px 10px;
+                        width: 50px;
+                    }
+
+                }
+            }
+        }
+    }
+
+    .copyright {
+        margin-bottom: 0;
+        padding: @pad;
+    }
+}
+/*--========================================================--*/
+/*--================== HOME PAGE STYLING ===================--*/
 /*-- Header --*/
 .home-header {
     align-items: center;
-    background: white url(../images/hero_index.jpg) no-repeat center;
     background-attachment: fixed;
     background-size: cover;
     display: flex;
@@ -99,9 +154,11 @@ button {
     }
 
     .tagline {
-        h1 {
-            .header();
+        .h-tagline {
+            color: @pale-green;
+            font: normal 3.5/1.5 'Cinzel Decorative', sans-serif;
             margin-top: 50px;
+            text-align: center;
         }
 
         .guarantee { //100% Satisfaction line
@@ -136,54 +193,54 @@ button {
 
 /*-- Main --*/
 // About
-.home-about {
+// .home-about {
 
-    .about-banner {
-        margin: 0 auto;
-        width: 80%;
-    }
+//     .about-banner {
+//         margin: 0 auto;
+//         width: 80%;
+//     }
 
-    .about-img {
-        border-radius: 10em;
-        margin: 0 40px 40px 40px;
-        width: 400px;
-        float: right;
-    }
+//     .about-img {
+//         border-radius: 10em;
+//         margin: 0 40px 40px 40px;
+//         width: 400px;
+//         float: right;
+//     }
 
-    h1 {
-        .header();
-        margin-top: 50px;
-    }
+//     h1 {
+//         .header();
+//         margin-top: 50px;
+//     }
 
-    .guarantee { //100% Satisfaction line
-        margin-top: 15px;
-        margin-bottom: 115px;
-        .small-text ();
-        text-align: center;
-    }
+//     .guarantee { //100% Satisfaction line
+//         margin-top: 15px;
+//         margin-bottom: 115px;
+//         .small-text ();
+//         text-align: center;
+//     }
 
-    section {
-        width: 100%;
-        p {
-            padding: 10px 50px;
-            margin-bottom: 100px;
-        }
-    }
+//     section {
+//         width: 100%;
+//         p {
+//             padding: 10px 50px;
+//             margin-bottom: 100px;
+//         }
+//     }
 
-    .about-logo {
-        margin: 0 auto;
-        padding-left: 5%;
-        width: 40%;
-    }
+//     .about-logo {
+//         margin: 0 auto;
+//         padding-left: 5%;
+//         width: 40%;
+//     }
 
-    .about-button {
-        margin-bottom: 20px;
-        a {
-            color: @text-color;
-            text-decoration: none;
-        }
-    }
-}
+//     .about-button {
+//         margin-bottom: 20px;
+//         a {
+//             color: @text-color;
+//             text-decoration: none;
+//         }
+//     }
+// }
 
 .home-about {
     padding: @pad;
@@ -360,64 +417,6 @@ button {
     float: right;
     margin-right: 20px;
     padding: @pad;
-}
-
-/*-- Footer --*/
-.footer {
-    flex-shrink: 0;
-
-    .foot-info {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
- 
-        .foot-image {
-            .img-md();
-        }
-        
-        .img-fluid {
-            width: 100%;
-        }
-    }
-
-    ul {
-        margin-top: 50px;
-        text-align: center;
-        padding: 0;
-        li {
-            display: inline;
-            list-style-type: none;
-            padding: 10px 30px;
-        }
-    }
-
-
-    .social-icons {
-        ul {
-            display: flex;
-            flex-flow: row nowrap;
-            justify-content: center;
-            margin-bottom: 50px;
-            
-
-            li {
-                list-style-type: none;
-                padding: 0 0;
-                a {
-                    img {
-                        margin: 5px 10px;
-                        width: 50px;
-                    }
-
-                }
-            }
-        }
-    }
-
-    .copyright {
-        margin-bottom: 0;
-        padding: @pad;
-    }
 }
 
 /*--=========================================================--*/
