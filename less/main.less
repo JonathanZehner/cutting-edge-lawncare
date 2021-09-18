@@ -22,7 +22,8 @@ article, aside, details, figcaption, figure, footer, header, main, nav, section,
 			
 -----------------------------------*/
 
-/*--********************** Universal Styling (begin) ******************--*/
+/*--=========================================================--*/
+/*--=================== UNIVERSAL STYLING ===================--*/
 
 /*-- Body --*/
 
@@ -55,7 +56,9 @@ button {
     margin: 50px;
 }
 
+/*--=========================================================--*/
 
+/*--=================== HOME PAGE STYLING ===================--*/
 /*-- Header --*/
 .home-header {
     align-items: center;
@@ -205,6 +208,10 @@ button {
 .home-portfolio {
     justify-content: space-between;
 
+    .carousel-control-prev, .carousel-control-next {
+        margin: 0 0;
+    }
+
     .c-border {
         border: 3px solid @b-blk;
         border-radius: 5px;
@@ -255,9 +262,7 @@ button {
             .h4();
 
             .accordion-button {
-                width: 100%;
                 margin: 0;
-                align-self: flex-start;
             }
         }
 
@@ -270,7 +275,6 @@ button {
                 font-size: 2rem;
             }
         }
-    }
 
         .card-body {
             h5 {
@@ -291,26 +295,46 @@ button {
                 }
 
                 ul {
-                    // list-style-type: none;
+                    list-style-type: none;
                     padding-left: 0;
                 }
             }
         }
     }
+}
+
+// Back to top Button //
+.back-top {
+    background-color: @light-blue;
+    border-radius: 5px;
+    color: @text-color;
+    float: right;
+    margin-right: 20px;
+    padding: @pad;
+}
 
 /*-- Footer --*/
 .footer {
-    background: white url(../images/footer_edger.jpeg) no-repeat bottom;
     flex-shrink: 0;
 
-    .foot-info img {
-        width: 100vw;
+    .foot-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+ 
+        .foot-image {
+            .img-md();
+        }
         
+        .img-fluid {
+            width: 100%;
+        }
     }
 
     ul {
         margin-top: 50px;
         text-align: center;
+        padding: 0;
         li {
             display: inline;
             list-style-type: none;
@@ -321,13 +345,18 @@ button {
 
     .social-icons {
         ul {
-            text-align: center;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: center;
+            margin-bottom: 50px;
+            
+
             li {
                 list-style-type: none;
-                display: inline-flex;
+                padding: 0 0;
                 a {
                     img {
-                        margin: 5px 20px;
+                        margin: 5px 10px;
                         width: 50px;
                     }
 
@@ -338,36 +367,166 @@ button {
 
     .copyright {
         margin-bottom: 0;
+        padding: @pad;
     }
 }
 
+/*--=========================================================--*/
+
+/*--================== ABOUT PAGE STYLING ===================--*/
+
+/*-- Header --*/
 
 
-
-/*-- Start 650 Media Query --*/
-
-/*--******************** Start 650 Media Query *********************--*/
+/*-- Body --*/
 
 
-/*-- End 650 Media Query --*/
-
-/*--* Start 950 Media Query --*/
+/*-- Footer --*/
 
 
-/*--********************* End 950 Media Query *********************--*/
+/*--=========================================================--*/
 
-/*-- End 950 Media Query --*/
+/*--============== PORTFOLIO PAGE STYLING ===================--*/
+
+/*-- Header --*/
+
+
+/*-- Body --*/
+
+
+/*-- Footer --*/
+
+
+/*--=========================================================--*/
+/*--=============== SERVICES PAGE STYLING ===================--*/
+
+/*-- Header --*/
+
+
+/*-- Body --*/
+
+
+/*-- Footer --*/
+
+
+/*--=========================================================--*/
+/*--================ CONTACT PAGE STYLING ===================--*/
+
+/*-- Header --*/
+
+
+/*-- Body --*/
+
+
+/*-- Footer --*/
+
+
+/*--=========================================================--*/
+
+/*--*********************               *********************--*/
+/*--********************* MEDIA QUERIES *********************--*/
+/*--*********************               *********************--*/
+
+/*-- Start 530 Media Query --*/
+@media (min-width: 530px) {
+    .home-about {
+        display: flex;
+        flex-direction: column;
+
+        img {
+            align-self: center;
+        }
+    }
+
+    .four-grid {
+        align-items: center;
+        flex-flow: row wrap;
+        height: 300px;
+        justify-content: center;
+        width: 375px;
+    }
+
+    .home-portfolio {
+        .testimonials {
+            height: 450px;
+
+        }
+    }
+
+    .footer .foot-info .foot-image {
+        align-self: center;
+    }
+}
+/*-- End 530 Media Query --*/
+
+/*--* Start 750 Media Query --*/
+@media (min-width: 750px) {
+    .hamburger, .cross, .ham-menu {
+        display: none;
+    }
+
+    .home-header .desktop-nav {
+        display: block;
+        padding-top: 15px;
+        width: 100vw;
+
+        .dn-container {
+            align-items: center;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+            width: 100%;
+
+            a {
+                order: 1;
+            }
+
+            .nav-tright {
+                order: 3;
+            }
+
+            .nav-main {
+                order: 2;
+            }
+        }
+    }
+
+    .home-portfolio {
+        align-items: flex-start;
+        justify-content: space-around;
+
+        .width50 {
+            width: 48%;
+        }
+
+        .gallery {
+            margin-top: 25px;
+        }
+
+        .article-pf .testimonials {
+            height: 370px;
+
+            .carousel-inner {
+                h4 {
+                    .body-copy();
+                }
+            }
+        }
+    }
+
+
+}
+
+
+/*-- End 750 Media Query --*/
 
 /*-- Start 1250 Media Query --*/
 
 
-/*--********************* End 950 Media Query *********************--*/
-
-/*--******************** Start 1500 Media Query *********************--*/
+/*-- End 1250 Media Query --*/
 
 /*-- Start 1500 Media Query --*/
 
 
-/*--********************* End 1500 Media Query *********************--*/
 
 /*-- End 1500 Media Query --*/

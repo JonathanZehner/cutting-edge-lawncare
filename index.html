@@ -13,14 +13,19 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
         <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Josefin+Sans:wght@200;300;400&display=swap" rel="stylesheet">
 
+
         <title>Cutting Edge Lawncare</title>
 
         <!-- FAVicon -->
         <link rel="shortcut icon" href="images/favicon.ico" type="img/ico" />
 
+        <!-- CSS -->
+        <!-- <link href="css/main.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="css/cube.css" type="text/css" /> -->
+
         <!-- LESS -->
-        <link rel="stylesheet/less" type="text/css" href="./main.less" />
-       
+        <link rel="stylesheet/less" type="text/css" href="less/main.less" />
+
         <!-- <link href="lightbox/src/css/lightbox.css" rel="stylesheet" /> -->
 
         <!-- Scripts -->
@@ -36,7 +41,7 @@
             <header class="home-header">
                 <div class="hero-banner">
                     <a href="index.html">
-                        <img class="top-logo" src="images/cel-mn-drk.png" alt="Brand logo for Cutting Edge Lawncare" title="Cutting Edge Lawncare Logo" />
+                        <img class="top-logo" src="images/cel-mn-drk-wht.png" alt="Brand logo for Cutting Edge Lawncare" title="Cutting Edge Lawncare Logo" />
                     </a>
                 </div>
                        
@@ -45,7 +50,7 @@
                     <p class="guarantee">-100% Satisfaction Guarantee</p>
                 </div>
 
-                <div class="nav-menus">
+                <div class="nav-menus" id="home">
                     <!-- Hamburger Buttons -->
                     <button class="hamburger">&#9776;</button>
                     <button class="cross">&#735;</button>
@@ -63,25 +68,29 @@
                 
                     <!-- Desktop Nav Menu -->
                     <nav class="desktop-nav">
-                        <a href="index.html"><img class="nav-logo" src="images/cel_logo.png" alt="Brand logo for Cutting Edge Lawncare"
-                                title="Cutting Edge Lawncare Logo" /></a>
-                        <ul class="nav-tright">
-                            <li><a href="#">Search</a></li>
-                            <li><a href="#">Join</a></li>
-                            <!-- replace with social media icon <li><a href="https://www.facebook.com/Nomad-Designs-113450920781941" target="_blank"><i class="fa fa-facebook-square" style="font-size:25px;color:#4267B2"></i></a></li> -->
-                        </ul>
-                        <ul class="nav-main">
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="about.html">About</a></li>
-                            <li><a href="portfolio.html">Portfolio</a></li>
-                            <li><a href="services.html">Services</a></li>
-                            <li><a href="contact.html">Contact</a></li>
-                        </ul>
+                        <div class="dn-container">
+                            <a href="index.html"><img class="nav-logo" src="images/cel_logo.png" alt="Brand logo for Cutting Edge Lawncare"
+                                    title="Cutting Edge Lawncare Logo" /></a>
+                            <ul class="nav-tright">
+                                <li><a href="#">Search</a></li>
+                                <li><a href="#">My Account</a></li>
+                                <!-- replace with social media icon <li><a href="https://www.facebook.com/Nomad-Designs-113450920781941" target="_blank"><i class="fa fa-facebook-square" style="font-size:25px;color:#4267B2"></i></a></li> -->
+                            </ul>
+
+                            <ul class="nav-main">
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="about.html">About</a></li>
+                                <li><a href="portfolio.html">Portfolio</a></li>
+                                <li><a href="services.html">Services</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+                        </div>
                     </nav>
                 </div>
             </header>
             
             <main>
+            <!-- About Section -->
                 <article class="home-about">
                     <img src="images/about_main.jpeg" alt="Image of an outstretched hand over grass" title="Even cuts throughout your yard!">
                     <h2>A little about us...</h2>
@@ -96,6 +105,7 @@
                         sapiente.</p>
                 </article>
             
+            <!-- Services Section -->
                 <article class="home-services">
                     <section class="services-text">
                         <h3>Some of Our Services</h3>
@@ -124,10 +134,11 @@
                         <img src="images/services4.jpeg" alt="Image of an edger trimming a bush" title="Finishing touches to make your shrubbery groomed">
                     </section>
                 </article>
-            
+ 
+            <!-- Portfolio Section -->
                 <section class="home-portfolio">
-                    <!-- Bootstrap Carousel -->
-                    <div id="carouselExampleIndicators" class="carousel slide carousel-fade c-border" data-bs-ride="carousel">
+                <!-- Bootstrap Carousel -->
+                    <div id="carouselExampleIndicators" class="gallery width50 carousel slide carousel-fade c-border" data-bs-ride="carousel">
                         <div class="carousel-indicators">
                             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
 
@@ -174,30 +185,10 @@
                         </button>
                     </div>
 
-                    <!-- 3D Cube plugin for >768px -->
-                    <ul class="m mq-sz">
-                        <li class="m1 li" tabindex="1"><img src="images/portfolio_grid1.jpeg" alt=""/></li>
-                        <li class="m2 li" tabindex="2"><img src="images/portfolio_grid2.jpeg" alt=""/></li>
-                        <li class="m3 li" tabindex="3"><img src="images/portfolio_grid3.jpeg" alt=""/></li>
-                        <li class="m4 li" tabindex="4"><img src="images/portfolio_grid4.jpeg" alt=""/></li>
-                        <li class="m5 li" tabindex="5"><img src="images/portfolio_grid5.jpeg" alt=""/></li>
-                        <li class="m6 li" tabindex="6"><img src="images/portfolio_grid6.jpeg" alt=""/></li>
-                        <li class="cube-wrap mq-sz">
-                            <div class="cube">
-                            <div class="front"><img src="images/portfolio_grid1.jpeg" alt=""/></div>
-                            <div class="right"><img src="images/portfolio_grid2.jpeg" alt=""/></div>
-                            <div class="top"><img src="images/portfolio_grid3.jpeg" alt=""/></div>
-                            <div class="left"><img src="images/portfolio_grid4.jpeg" alt=""/></div>
-                            <div class="bottom"><img src="images/portfolio_grid5.jpeg" alt=""/></div>
-                            <div class="back"><img src="images/portfolio_grid6.jpeg" alt=""/></div>
-                            </div>
-                        </li>
-                    </ul>
-
-                    <article class="article-pf">
+                    <article class="article-pf width50">
                         <h2>See what our customers think</h2>
 
-                        <!-- Testimonials Carousel -->
+                <!-- Testimonials Carousel -->
                         <div id="carouselExampleDark" class="carousel carousel-dark slide testimonials" data-bs-ride="carousel">
                             <div class="carousel-indicators"><!-- Buttons -->
                                 <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -271,13 +262,14 @@
                     </article>
                 </section>
             
+            <!-- Plans Section -->
                 <section class="pricing-plans">
                     <h2>Choose A Plan</h2>
                     <p>Some more text. Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim eius odio non impedit sequi suscipit aut! Praesentium fuga impedit, nam, sit doloribus minima aut, necessitatibus tempora ducimus quos debitis tenetur?</p>
 
-                    <!-- Bootstrap Accordion: Plan Pricing -->
+                <!-- Bootstrap Accordion: Plan Pricing -->
                     <div class="accordion accordion-flush" id="accordionFlushExample">
-                        <!-- One -->
+                    <!-- One -->
                         <div class="accordion-item">
                             <h4 class="accordion-header" id="flush-headingOne">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
@@ -318,7 +310,7 @@
                             </div>
                         </div>
 
-                        <!-- Two -->
+                    <!-- Two -->
                         <div class="accordion-item">
                             <h4 class="accordion-header" id="flush-headingTwo">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
@@ -359,7 +351,7 @@
                             </div>
                         </div>
 
-                        <!-- Three -->
+                    <!-- Three -->
                         <div class="accordion-item">
                             <h4 class="accordion-header" id="flush-headingThree">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
@@ -440,6 +432,7 @@
         </footer>
         
         <!-- Scripts -->
+        <script src="https://cdn.jsdelivr.net/npm/less@4.1.1"></script>
         <script type="text/javascript" src="js/backstretch.js"></script>
         <script type="text/javascript" src="js/hamburger-menu.js"></script>
         <script type="text/javascript" src="js/main.js"></script>
