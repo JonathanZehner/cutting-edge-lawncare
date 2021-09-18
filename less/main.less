@@ -26,6 +26,30 @@ article, aside, details, figcaption, figure, footer, header, main, nav, section,
 /*--=================== UNIVERSAL STYLING ===================--*/
 
 /*-- Body --*/
+// Universal Header Styling
+.header, {
+    background-color: @bg-kolor;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: .8rem;
+    text-transform: uppercase;
+
+    .nav {
+        align-items: center;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        width: 100vw;
+
+        .dn {
+            display: none;
+        }
+    }
+
+    .nav-logo {
+        width: 120px;
+        margin-left: 30px;
+    }
+}
 
 // (begin) Sticky Footer
 html, body {
@@ -395,6 +419,7 @@ button {
 /*--================== ABOUT PAGE STYLING ===================--*/
 
 /*-- Header --*/
+
 
 
 /*-- Body --*/
