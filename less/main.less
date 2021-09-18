@@ -583,48 +583,117 @@ button {
         .cards-container {
             align-items: flex-end;
             display: flex;
-            height: 800px;
+            height: 750px;
+            top: 10%;
+            left: 40%;
+            width: 250px;
+            margin: 0 auto;
+            perspective: 900px;
 
-            .card {
-                box-shadow: @box-shdw;
-                .card-hdr {
-                    background-color: @b-grn-lt;
+            .container {
+                position: absolute;
+                top: 0%;
+                width: 100%;
+                transition: .5s all ease;
+                transform: rotateX(60deg) scale(0.7);
+                perspective: 900px;
+                box-shadow: 0px 20px 50px #555;
+                animation: entry 1s linear 1;
+                padding-left: 0;
+                padding-right: 0;
 
-                    h4 {
-                        .h4();
-                        color: @pale-green;
-                        font-size: 2rem;
-                    }
-                }  
-
-                .card-body {
-                    h5 {
-                        .h5();
-                        margin-top: 0;
-                    }
-
-                    p {
-                        line-height: normal;
-                        margin-bottom: 0;
-                    }
-
-                    .includes {
-                        margin-top: 25px;
+                .card {
+                    box-shadow: @box-shdw;
+                    .card-hdr {
+                        background-color: @b-grn-lt;
 
                         h4 {
                             .h4();
+                            color: @pale-green;
+                            font-size: 2rem;
+                        }
+                    }  
+
+                    .card-body {
+                        h5 {
+                            .h5();
+                            margin-top: 0;
                         }
 
-                        ul {
-                            list-style-type: none;
-                            padding-left: 0;
+                        p {
+                            line-height: normal;
+                            margin-bottom: 0;
+                        }
+
+                        .includes {
+                            margin-top: 25px;
+
+                            h4 {
+                                .h4();
+                            }
+
+                            ul {
+                                list-style-type: none;
+                                padding-left: 0;
+
+                                .span-text {
+                                    color: @b-dkgrn;
+                                    font: normal 0.8rem/1.5 'Cinzel Decorative';
+                                }
+                            }
                         }
                     }
                 }
+
+                .card-two {
+                    align-self: flex-start;
+                }
+
             }
 
-            .card-two {
-                align-self: flex-start;
+            #c0 {
+                z-index: 300;
+                box-shadow: 0px 20px 100px #555;
+            }
+
+            #c1 {
+                box-shadow: 0px 20px 100px #555;
+                left: 100%;
+                z-index: 0;
+            }
+
+            #c2 {
+                left: -100%;
+                z-index: 0;
+                box-shadow: 0px 20px 100px #555;
+            }
+
+            .container:hover {
+                cursor: pointer;
+                transform: rotate(0deg) scale(1) translateY(10px);
+                transition: .5s all ease;
+                z-index: 400;
+            }
+
+            @keyframes simple1 {
+                50% {
+                    transform: translateX(-10px);
+                    opacity: 0.5;
+                }
+                100% {
+                    transform: translateX(-10px);
+                    opacity: 0;
+                }
+            }
+
+            @keyframes entry {
+                0% {
+                    top: -20%;
+                    opacity: 0.1;
+                }
+                100% {
+                    top: 0%;
+                }
             }
         }
     }
