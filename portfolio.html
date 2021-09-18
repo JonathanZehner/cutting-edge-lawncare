@@ -19,9 +19,10 @@
         <!-- FAVicon -->
         <link rel="shortcut icon" href="images/favicon.ico" type="img/ico" />
 
-        <!-- CSS -->
-        <link href="css/main.css" rel="stylesheet" type="text/css" />
-        <link rel="stylesheet" href="css/cube.css" type="text/css" />
+        <!-- LESS -->
+       
+        <link rel="stylesheet/less" type="text/css" href="./main.less" />
+    
         <!-- <link href="lightbox/src/css/lightbox.css" rel="stylesheet" /> -->
 
         <!-- Scripts -->
@@ -83,25 +84,16 @@
             </header>
             
             <main>
-                <section class="home-portfolio">
-                    <ul class="m">
-                        <li class="m1 li" tabindex="1"><img src="images/portfolio_grid1.jpeg" alt=""/></li>
-                        <li class="m2 li" tabindex="2"><img src="images/portfolio_grid2.jpeg" alt=""/></li>
-                        <li class="m3 li" tabindex="3"><img src="images/portfolio_grid3.jpeg" alt=""/></li>
-                        <li class="m4 li" tabindex="4"><img src="images/portfolio_grid4.jpeg" alt=""/></li>
-                        <li class="m5 li" tabindex="5"><img src="images/portfolio_grid5.jpeg" alt=""/></li>
-                        <li class="m6 li" tabindex="6"><img src="images/portfolio_grid6.jpeg" alt=""/></li>
-                        <li class="cube-wrap mq-sz">
-                            <div class="cube">
-                            <div class="front"><img src="images/portfolio_grid1.jpeg" alt=""/></div>
-                            <div class="right"><img src="images/portfolio_grid2.jpeg" alt=""/></div>
-                            <div class="top"><img src="images/portfolio_grid3.jpeg" alt=""/></div>
-                            <div class="left"><img src="images/portfolio_grid4.jpeg" alt=""/></div>
-                            <div class="bottom"><img src="images/portfolio_grid5.jpeg" alt=""/></div>
-                            <div class="back"><img src="images/portfolio_grid6.jpeg" alt=""/></div>
-                            </div>
-                        </li>
-                    </ul>
+                <section class="portfolio_grid">
+
+                    <div class="photo_grid">
+                        <img src="images/portfolio_grid1.jpeg" alt=""/>
+                        <img src="images/portfolio_grid2.jpeg" alt=""/>
+                        <img src="images/portfolio_grid3.jpeg" alt=""/>
+                        <img src="images/portfolio_grid4.jpeg" alt=""/>
+                        <img src="images/portfolio_grid5.jpeg" alt=""/>
+                        <img src="images/portfolio_grid6.jpeg" alt=""/>
+                    </div>
 
                     <article class="article-pf">
                         <h2>Another Heading</h2>
@@ -152,5 +144,6 @@
             <script type="text/javascript" src="js/backstretch.js"></script>
             <script type="text/javascript" src="js/hamburger-menu.js"></script>
             <script type="text/javascript" src="js/main.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/less@4.1.1" ></script>
         </body>
     </html>
