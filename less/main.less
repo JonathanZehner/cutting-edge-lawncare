@@ -22,7 +22,8 @@ article, aside, details, figcaption, figure, footer, header, main, nav, section,
 			
 -----------------------------------*/
 
-/*--********************** Universal Styling (begin) ******************--*/
+/*--=========================================================--*/
+/*--=================== UNIVERSAL STYLING ===================--*/
 
 /*-- Body --*/
 
@@ -55,7 +56,9 @@ button {
     margin: 50px;
 }
 
+/*--=========================================================--*/
 
+/*--=================== HOME PAGE STYLING ===================--*/
 /*-- Header --*/
 .home-header {
     align-items: center;
@@ -368,8 +371,61 @@ button {
     }
 }
 
+/*--=========================================================--*/
+
+/*--================== ABOUT PAGE STYLING ===================--*/
+
+/*-- Header --*/
 
 
+/*-- Body --*/
+
+
+/*-- Footer --*/
+
+
+/*--=========================================================--*/
+
+/*--============== PORTFOLIO PAGE STYLING ===================--*/
+
+/*-- Header --*/
+
+
+/*-- Body --*/
+
+
+/*-- Footer --*/
+
+
+/*--=========================================================--*/
+/*--=============== SERVICES PAGE STYLING ===================--*/
+
+/*-- Header --*/
+
+
+/*-- Body --*/
+
+
+/*-- Footer --*/
+
+
+/*--=========================================================--*/
+/*--================ CONTACT PAGE STYLING ===================--*/
+
+/*-- Header --*/
+
+
+/*-- Body --*/
+
+
+/*-- Footer --*/
+
+
+/*--=========================================================--*/
+
+/*--*********************               *********************--*/
+/*--********************* MEDIA QUERIES *********************--*/
+/*--*********************               *********************--*/
 
 /*-- Start 530 Media Query --*/
 @media (min-width: 530px) {
@@ -410,17 +466,28 @@ button {
     }
 
     .home-header .desktop-nav {
-        align-items: center;
-        display: flex;
-        flex-flow: column nowrap;
+        display: block;
         padding-top: 15px;
         width: 100vw;
 
         .dn-container {
+            align-items: center;
             display: flex;
             flex-flow: row nowrap;
             justify-content: space-between;
             width: 100%;
+
+            a {
+                order: 1;
+            }
+
+            .nav-tright {
+                order: 3;
+            }
+
+            .nav-main {
+                order: 2;
+            }
         }
     }
 
