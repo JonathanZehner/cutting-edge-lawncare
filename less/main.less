@@ -460,7 +460,7 @@ button {
     .footer .foot-info .foot-image {
         align-self: center;
     }
-}
+
 
 /*--================== ABOUT PAGE STYLING ===================--*/
 
@@ -512,7 +512,7 @@ button {
 
 /*--=========================================================--*/
 
-
+}
 /*--================== End 530 Media Query ==================--*/
 /**************************************************************/
 /*--================= Start 750 Media Query =================--*/
@@ -521,31 +521,41 @@ button {
         display: none;
     }
 
-    .home-header .desktop-nav {
-        display: block;
-        padding-top: 15px;
-        width: 100vw;
+    .home-header {
+        height: 75vh;
 
-        .dn-container {
-            align-items: center;
-            display: flex;
-            flex-flow: row nowrap;
-            justify-content: space-between;
-            width: 100%;
+        .hero-banner, .tagline {
+            flex: 1 0 auto;
+        }
 
-            a {
-                order: 1;
-            }
+        .desktop-nav {
+            display: block;
+            flex-shrink: 0;
+            padding-top: 15px;
+            width: 100vw;
 
-            .nav-tright {
-                display: none;
-                order: 3;
-            }
+            .dn-container {
+                align-items: center;
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: space-between;
+                width: 100%;
 
-            .nav-main {
-                order: 2;
+                a {
+                    order: 1;
+                }
+
+                .nav-tright {
+                    display: none;
+                    order: 3;
+                }
+
+                .nav-main {
+                    order: 2;
+                }
             }
         }
+
     }
 
     .home-services {
@@ -697,7 +707,7 @@ button {
             }
         }
     }
-}
+
 
 
 /*--================== ABOUT PAGE STYLING ===================--*/
@@ -750,10 +760,45 @@ button {
 
 /*--=========================================================--*/
 
-
+}
 /*--================== End 750 Media Query ==================--*/
 /**************************************************************/
-/*--================ Start 1250 Media Query ================--*/
+/*--================ Start 900 Media Query ================--*/
+@media (min-width: 900px) {
+
+    header .nav-menus .desktop-nav .dn-container {
+        justify-content: space-around;
+
+        .nav-tright {
+            align-items: center;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: center;
+        }
+    }
+
+    .home-about {
+        align-items: center;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+
+        img {
+            border-radius: 5px;
+            box-shadow: @box-shdw;
+            margin-right: 2%;
+            margin-top: 45px;
+            width: 50%;
+        }
+
+        .hm-ab-wrapper {
+            padding: @pad;
+            width: 50%;
+        }
+    }
+    
+
+
 
 
 
@@ -809,8 +854,8 @@ button {
 
 
 /*--=========================================================--*/
-
-/*--================= End 1250 Media Query =================--*/
+}
+/*--================= End 900 Media Query =================--*/
 /**************************************************************/
 /*--================ Start 1500 Media Query ================--*/
 
