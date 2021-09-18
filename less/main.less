@@ -158,6 +158,8 @@ button {
 
 .home-about {
     padding: @pad;
+    margin: 0 auto;
+    max-width: 1000px;
 
     img {
         .img-md();
@@ -168,7 +170,7 @@ button {
     }
 }
 
-.home-services, .home-portfolio {
+.home-services, .home-portfolio .pf-wrap {
     display: flex;
     flex-flow: row wrap;
     padding: @pad;
@@ -178,17 +180,21 @@ button {
 .home-services {
     justify-content: center;
 
-    h3 {
-        .h3();
-    }
+    .services-text {
+        max-width: 400px;
 
-    .two-col {
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: center;
-    
-        .left-col, .rt-col {
-            width: 50%;
+        h3 {
+            .h3();
+        }
+
+        .two-col {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+        
+            .left-col, .rt-col {
+                width: 50%;
+            }
         }
     }
 
@@ -206,47 +212,54 @@ button {
 
 // Portfolio and Testimonials
 .home-portfolio {
-    justify-content: space-between;
+    width: 100vw;
 
-    .carousel-control-prev, .carousel-control-next {
-        margin: 0 0;
-    }
+    .pf-wrap {
+        justify-content: space-between;
+        margin: 0 auto;
+        max-width: 1600px;
 
-    .c-border {
-        border: 3px solid @b-blk;
-        border-radius: 5px;
-    }
-
-    .article-pf {
-        background-color: rgba(255, 255, 255, 0.767);
-        border-radius: 5px;
-        margin: 25px auto;
-
-        h2, p {
-            padding: @pad;
+        .carousel-control-prev, .carousel-control-next {
+            margin: 0 0;
         }
 
-        h2 {
-            .h2();
-            text-align: center;
+        .c-border {
+            border: 3px solid @b-blk;
+            border-radius: 5px;
         }
-    }
 
-    .testimonials {
-        border-radius: 5px;
-        height: 600px;
+        .article-pf {
+            background-color: rgba(255, 255, 255, 0.767);
+            border-radius: 5px;
+            margin: 25px auto;
 
-        .carousel-inner {
-            margin: auto;
-            padding: 15px 2%;
-            position: relative;
-            width: 75%;
+            h2, p {
+                padding: @pad;
+            }
+
+            h2 {
+                .h2();
+                text-align: center;
+            }
+        }
+
+        .testimonials {
+            border-radius: 5px;
+            height: 600px;
+
+            .carousel-inner {
+                margin: auto;
+                padding: 15px 2%;
+                position: relative;
+                width: 75%;
+            }
         }
     }
 }
 
 // Plans
 .pricing-plans {
+    margin: auto;
     max-width: 1000px;
 
     h2 {
@@ -254,6 +267,8 @@ button {
     }
 
     p {
+        margin: auto;
+        max-width: 600px;
         padding: @pad;
     }
 
@@ -450,7 +465,7 @@ button {
         width: 375px;
     }
 
-    .home-portfolio {
+    .home-portfolio .pf-wrap {
         .testimonials {
             height: 450px;
 
@@ -562,7 +577,7 @@ button {
         flex-flow: row nowrap;
     }
 
-    .home-portfolio {
+    .home-portfolio .pf-wrap {
         align-items: flex-start;
         justify-content: space-around;
 
@@ -857,8 +872,46 @@ button {
 }
 /*--================= End 900 Media Query =================--*/
 /**************************************************************/
-/*--================ Start 1500 Media Query ================--*/
+/*--================ Start 1400 Media Query ================--*/
+@media (min-width: 1400px) {
+    main {
+        align-items: center;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
 
+        .home-about {
+            flex-direction: column;
+            margin: 0 0 0 3%;
+            order: 1;
+            width: 50%;
+
+            img {
+                width: 100%;
+            }
+
+            .hm-ab-wrapper {
+                width: 75%;
+            }
+        }
+
+        .home-services {
+            flex-direction: column;
+            margin-right: 10%;
+            order: 2;
+            width: 30%;
+        }
+
+        .home-portfolio {
+            order: 3;
+        }
+
+        .pricing-plans {
+            order: 4;
+        }
+
+    }
+}
 
 
 
@@ -916,4 +969,4 @@ button {
 
 /*--=========================================================--*/
 /**************************************************************/
-/*--================= End 1500 Media Query =================--*/
+/*--================= End 1400 Media Query =================--*/
