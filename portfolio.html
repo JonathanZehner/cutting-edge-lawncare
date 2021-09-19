@@ -19,9 +19,10 @@
         <!-- FAVicon -->
         <link rel="shortcut icon" href="images/favicon.ico" type="img/ico" />
 
-        <!-- CSS -->
-        <link href="css/main.css" rel="stylesheet" type="text/css" />
-        <link rel="stylesheet" href="css/cube.css" type="text/css" />
+        <!-- LESS -->
+       
+        <link rel="stylesheet/less" type="text/css" href="less/main.less" />
+    
         <!-- <link href="lightbox/src/css/lightbox.css" rel="stylesheet" /> -->
 
         <!-- Scripts -->
@@ -34,26 +35,17 @@
 
     <body>
         <div class="content">
-            <header class="home-header">
-                <div class="hero-banner">
-                    <a href="index.html">
-                        <img class="top-logo" src="images/cel-mn-drk-wht.png" alt="Brand logo for Cutting Edge Lawncare" title="Cutting Edge Lawncare Logo" />
-                    </a>
-                </div>
-                       
-                <div class="tagline">
-                    <h1>The Grass Masters</h1>
-                    <p class="guarantee">-100% Satisfaction Guarantee</p>
-                </div>
+            <header class="header">
+                <div class="nav-menus nav">
+                    <a class="mobile-img" href="index.html"><img class="nav-logo" src="images/cel-mn-drk-wht.png" alt="Brand logo for Cutting Edge Lawncare" title="Cutting Edge Lawncare Logo" /></a>
 
-                <div class="nav-menus">
                     <!-- Hamburger Buttons -->
-                    <button class="hamburger">&#9776;</button>
-                    <button class="cross">&#735;</button>
+                    <button class="hamburger ham">&#9776;</button>
+                    <button class="cross x">&#735;</button>
                 
                     <!-- Hamburger Menu Nav -->
-                    <nav class="ham-menu menu">
-                        <ul class="nav-main">
+                    <nav class="ham-menu menu hm">
+                        <ul class="nav-main nm">
                             <li><a href="index.html">Home</a></li>
                             <li><a href="about.html">About</a></li>
                             <li><a href="portfolio.html">Portfolio</a></li>
@@ -63,13 +55,11 @@
                     </nav>
                 
                     <!-- Desktop Nav Menu -->
-                    <nav class="desktop-nav">
-                        <a href="index.html"><img class="nav-logo" src="images/cel_logo.png" alt="Brand logo for Cutting Edge Lawncare"
-                                title="Cutting Edge Lawncare Logo" /></a>
-                        <ul class="nav-tright">
+                    <nav class="desktop-nav dn">
+                        <a href="index.html"><img class="nav-logo" src="images/cel-mn-drk-wht.png" alt="Brand logo for Cutting Edge Lawncare" title="Cutting Edge Lawncare Logo" /></a>
+                        <ul class="nav-tright nr">
                             <li><a href="#">Search</a></li>
-                            <li><a href="#">Join</a></li>
-                            <!-- replace with social media icon <li><a href="https://www.facebook.com/Nomad-Designs-113450920781941" target="_blank"><i class="fa fa-facebook-square" style="font-size:25px;color:#4267B2"></i></a></li> -->
+                            <li><a href="#">My Account</a></li>
                         </ul>
                         <ul class="nav-main">
                             <li><a href="index.html">Home</a></li>
@@ -82,75 +72,175 @@
                 </div>
             </header>
             
-            <main>
-                <section class="home-portfolio">
-                    <ul class="m">
-                        <li class="m1 li" tabindex="1"><img src="images/portfolio_grid1.jpeg" alt=""/></li>
-                        <li class="m2 li" tabindex="2"><img src="images/portfolio_grid2.jpeg" alt=""/></li>
-                        <li class="m3 li" tabindex="3"><img src="images/portfolio_grid3.jpeg" alt=""/></li>
-                        <li class="m4 li" tabindex="4"><img src="images/portfolio_grid4.jpeg" alt=""/></li>
-                        <li class="m5 li" tabindex="5"><img src="images/portfolio_grid5.jpeg" alt=""/></li>
-                        <li class="m6 li" tabindex="6"><img src="images/portfolio_grid6.jpeg" alt=""/></li>
-                        <li class="cube-wrap mq-sz">
-                            <div class="cube">
-                            <div class="front"><img src="images/portfolio_grid1.jpeg" alt=""/></div>
-                            <div class="right"><img src="images/portfolio_grid2.jpeg" alt=""/></div>
-                            <div class="top"><img src="images/portfolio_grid3.jpeg" alt=""/></div>
-                            <div class="left"><img src="images/portfolio_grid4.jpeg" alt=""/></div>
-                            <div class="bottom"><img src="images/portfolio_grid5.jpeg" alt=""/></div>
-                            <div class="back"><img src="images/portfolio_grid6.jpeg" alt=""/></div>
-                            </div>
-                        </li>
-                    </ul>
-
-                    <article class="article-pf">
-                        <h2>Another Heading</h2>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui iusto sunt eaque impedit reiciendis. Rerum
-                            veritatis sed ratione consectetur. Error, eum nostrum. Autem provident earum sequi numquam debitis
-                            voluptatem! Nam?</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam harum praesentium modi. Facere neque
-                            quam quasi eaque velit vitae illo eveniet minus tempore repellat, nobis odit temporibus qui est id.</p>
-                    </article>
-                </section>
-            </main>
-
-            <footer class="footer">
-                <section class="foot-info">
-                    <img src="images/cel_logo.png" alt="Brand Logo for Cutting Edge Lawncare" title="Cutting Edge Lawncare">
-                        
-                    <nav>
-                        <ul>
-                           <li>Link</li>
-                            <li>Link</li>
-                            <li>Link</li>
-                            <li>Link</li>
-                            <li>Link</li>
-                        </ul>
-                    </nav>
-    
-                    <div class="social-icons">
-                        <ul>
-                            <li><a href="#"><img src="images/fb.png" alt="Facebook Logo" title="Follow us on Facebook!"></a></li>
-                            <li><a href="#"><img src="images/ig.png" alt="Instagram Logo" title="Follow us on Instagram!"></a></li>
-                            <li><a href="#"><img src="images/linkedin.png" alt="Linked In Logo" title="Follow us on Linked In!"></a></li>
-                            <li><a href="#"><img src="images/twitter.png" alt="Twitter Logo" title="Follow us on Twitter!"></a></li>
-                        </ul>
-                    </div>
-    
-                    <div class="copyright">
-                        <p>&copy; 2021 | Cutting Edge Lawncare, LLC. | 123 John Deere Ln., Keystone Heights, FL 32656</p>
-                    </div>
-    
-                    <img src="images/footer_edger.jpeg" alt="Bottom border image of grass growing to anchor the bottom of the website" title="Don't let your grass get too long!">
-                </section>
-    
-                <a href="home">Back to Top</a>
-    
-            </footer>
             
-            <!-- Scripts -->
-            <script type="text/javascript" src="js/backstretch.js"></script>
-            <script type="text/javascript" src="js/hamburger-menu.js"></script>
-            <script type="text/javascript" src="js/main.js"></script>
+
+                            <!-- Portfolio Section -->
+                            <section class="home-portfolio">
+                                <div class="pf-wrap">
+                                <!-- Bootstrap Carousel -->
+                                    <div id="carouselExampleIndicators" class="gallery width50 carousel slide carousel-fade c-border" data-bs-ride="carousel">
+                                        <div class="carousel-indicators">
+                                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            
+                                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            
+                                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            
+                                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            
+                                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+            
+                                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                                            
+                                        </div>
+            
+                                        <div class="carousel-inner"><!-- Carousel Images -->
+                                            <div class="carousel-item active">
+                                                <img src="images/portfolio1.jpeg" class="d-block w-100" alt="...">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="images/portfolio7.jpeg" class="d-block w-100" alt="...">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="images/portfolio8.jpeg" class="d-block w-100" alt="...">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="images/portfolio4.jpeg" class="d-block w-100" alt="...">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="images/portfolio5.jpeg" class="d-block w-100" alt="...">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="images/portfolio6.jpeg" class="d-block w-100" alt="...">
+                                            </div>                            
+                                        </div>
+            
+                                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Previous</span>
+                                        </button>
+                                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Next</span>
+                                        </button>
+                                    </div>
+            
+                                    <article class="article-pf width50">
+                                        <h2>See what our customers think</h2>
+            
+                                <!-- Testimonials Carousel -->
+                                        <div id="carouselExampleDark" class="carousel carousel-dark slide testimonials" data-bs-ride="carousel">
+                                            <div class="carousel-indicators"><!-- Buttons -->
+                                                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            
+                                                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            
+                                                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            
+                                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            
+                                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+            
+                                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                                            </div>
+            
+                                            <div class="carousel-inner">
+                                                <div class="carousel-item active" data-bs-interval="10000">
+                                                    <div class="center">
+                                                        <h4 class="d-block w-100">&quot;We want to express our appreciation for the completion of our project. Cutting Edge workmen are very courteous and hard working.&quot;</h4>
+                                                        <p>-Dick and Eileen</p>
+                                                    </div>
+                                                </div>
+            
+                                                <div class="carousel-item" data-bs-interval="2000">
+                                                    <div class="center">
+                                                        <h4 class="d-block w-100">&quot;I would just like to say a big THANK YOU to Cutting Edge Lawncare for the work they did in creating my patio this fall. They were very helpful and knowledgable in helping me design it, and did a BEAUTIFUL job of executing it. I have wanted a patio for years, and am so happy with the results. It's gorgeous!!!&quot;</h4>
+                                                        <p>-Rupert R.</p>
+                                                    </div>
+                                                </div>
+            
+                                                <div class="carousel-item">
+                                                    <div class="center">
+                                                        <h4 class="d-block w-100">&quot;I had contacted Cutting Edge Lawncare for two reasons, exceptional service and phenomenal results. Cutting Edge Lawncare exceeded our expectations on both fronts. Kevin's level of customer service and knowledge in designing and executing a plan of action will keep our family coming back to Cutting Edge Lawncare for years to come.&quot;</h4>
+                                                        <p>-Clayton and Jan</p>
+                                                    </div>
+                                                </div>
+            
+                                                <div class="carousel-item">
+                                                    <div class="center">
+                                                        <h4 class="d-block w-100">&quot;The job your guys have done was nothing short of terrific! You never cease to amaze me. You are the most professional company I know. Thanks a million!&quot;</h4>
+                                                        <p>-David C.</p>
+                                                    </div>
+                                                </div>
+            
+                                                <div class="carousel-item">
+                                                    <div class="center">
+                                                        <h4 class="d-block w-100">&quot;THANK YOU--THANK YOU--THANK YOU!!! When I got home today my lawn was done and it looks wonderful! You have taken very good care of me this year and I just wanted you to know how much I appreciate it. Thanks again!!&quot;</h4>
+                                                        <p>-Joe S.</p>
+                                                    </div>
+                                                </div>
+            
+                                                <div class="carousel-item">
+                                                    <div class="center">
+                                                        <h4 class="d-block w-100">&quot;Cutting Edge Lawncare has been doing our Fall cleanups for the past two years. There is nothing better than coming home after work, and bam! - the lawn is void of leaves, branches, and looks ready to be "tucked away" for winter. Always fast and professional, these guys rock!&quot;</h4>
+                                                        <p>-Jerry & Meghan</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+            
+                                            <!-- Arrow Buttons -->
+                                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                <span class="visually-hidden">Previous</span>
+                                            </button>
+                                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                <span class="visually-hidden">Next</span>
+                                            </button>
+                                        </div>
+            
+                                    </article>
+                                </div>
+                            </section>
+  
+            
+
+                            <footer class="footer">
+                                <section class="foot-info">
+                                    <nav>
+                                        <ul>
+                                           <li>Link</li>
+                                            <li>Link</li>
+                                            <li>Link</li>
+                                            <li>Link</li>
+                                            <li>Link</li>
+                                        </ul>
+                                    </nav>
+                    
+                                    <div class="social-icons">
+                                        <ul>
+                                            <li><a href="#"><img src="images/fb.png" alt="Facebook Logo" title="Follow us on Facebook!"></a></li>
+                                            <li><a href="#"><img src="images/ig.png" alt="Instagram Logo" title="Follow us on Instagram!"></a></li>
+                                            <li><a href="#"><img src="images/linkedin.png" alt="Linked In Logo" title="Follow us on Linked In!"></a></li>
+                                            <li><a href="#"><img src="images/twitter.png" alt="Twitter Logo" title="Follow us on Twitter!"></a></li>
+                                        </ul>
+                                    </div>
+                
+                    
+                                    <div class="copyright">
+                                        <p class="text-center">&copy; 2021 | Cutting Edge Lawncare, LLC. | 123 John Deere Ln., Keystone Heights, FL 32656</p>
+                                    </div>
+                
+                                    <img class="foot-img" src="images/footer_edger.png" alt="Bottom border image of grass growing to anchor the bottom of the website" title="Don't let your grass get too long!">
+                                </section>
+                            </footer>
+                            
+                            <!-- Scripts -->
+                            <script type="text/javascript" src="js/backstretch.js"></script>
+                            <script type="text/javascript" src="js/hamburger-menu.js"></script>
+                            <script type="text/javascript" src="js/main.js"></script>
+                            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+                            <script src="https://cdn.jsdelivr.net/npm/less@4.1.1" ></script>
+                            <script src="https://cdn.jsdelivr.net/npm/less.min.js.map" ></script>
         </body>
     </html>

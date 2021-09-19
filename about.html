@@ -7,7 +7,7 @@
 
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
 
-        <script src="https://cdn.jsdelivr.net/npm/less@4.1.1" ></script>
+        
 
         <!-- Fonts -->
         <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,9 +19,9 @@
         <!-- FAVicon -->
         <link rel="shortcut icon" href="images/favicon.ico" type="img/ico" />
 
-        <!-- CSS -->
-        <link href="css/main.css" rel="stylesheet" type="text/css" />
-        <link rel="stylesheet" href="css/cube.css" type="text/css" />
+      <!-- LESS -->
+      <link rel="stylesheet/less" type="text/css" href="less/main.less" />
+
         <!-- <link href="lightbox/src/css/lightbox.css" rel="stylesheet" /> -->
 
         <!-- Scripts -->
@@ -34,28 +34,17 @@
 
     <body>
         <div class="content">
-            <header class="home-header">
-                <div class="hero-banner">
-                    <a href="index.html">
-                        <img class="top-logo" src="images/cel-mn-drk.png" alt="Brand logo for Cutting Edge Lawncare" title="Cutting Edge Lawncare Logo" />
-                    </a>
-                </div>
+            <header class="header">
+                <div class="nav-menus nav">
+                    <a class="mobile-img" href="index.html"><img class="nav-logo" src="images/cel-mn-drk-wht.png" alt="Brand logo for Cutting Edge Lawncare" title="Cutting Edge Lawncare Logo" /></a>
 
-             <img class="about-banner" class="img-fluid" src="images/about_top_banner.jpeg" class="rounded" alt="About Page Banner of Lawnmower">
-                       
-                <div class="tagline">
-                    <h1>The Grass Masters</h1>
-                    <p class="guarantee">-100% Satisfaction Guarantee</p>
-                </div>
-
-                <div class="nav-menus">
                     <!-- Hamburger Buttons -->
-                    <button class="hamburger">&#9776;</button>
-                    <button class="cross">&#735;</button>
+                    <button class="hamburger ham">&#9776;</button>
+                    <button class="cross x">&#735;</button>
                 
                     <!-- Hamburger Menu Nav -->
-                    <nav class="ham-menu menu">
-                        <ul class="nav-main">
+                    <nav class="ham-menu menu hm">
+                        <ul class="nav-main nm">
                             <li><a href="index.html">Home</a></li>
                             <li><a href="about.html">About</a></li>
                             <li><a href="portfolio.html">Portfolio</a></li>
@@ -65,12 +54,11 @@
                     </nav>
                 
                     <!-- Desktop Nav Menu -->
-                    <nav class="desktop-nav">
-                        <a href="index.html"><img class="nav-logo" src="images/cel_logo.png" alt="Brand logo for Cutting Edge Lawncare" title="Cutting Edge Lawncare Logo" /></a>
-                        <ul class="nav-tright">
+                    <nav class="desktop-nav dn">
+                        <a href="index.html"><img class="nav-logo" src="images/cel-mn-drk-wht.png" alt="Brand logo for Cutting Edge Lawncare" title="Cutting Edge Lawncare Logo" /></a>
+                        <ul class="nav-tright nr">
                             <li><a href="#">Search</a></li>
-                            <li><a href="#">Join</a></li>
-                            <!-- replace with social media icon <li><a href="https://www.facebook.com/Nomad-Designs-113450920781941" target="_blank"><i class="fa fa-facebook-square" style="font-size:25px;color:#4267B2"></i></a></li> -->
+                            <li><a href="#">My Account</a></li>
                         </ul>
                         <ul class="nav-main">
                             <li><a href="index.html">Home</a></li>
@@ -85,24 +73,23 @@
             
         <main>
 
-            <section>
-                <p>You have better things to do than to watch your grass grow. We quickly and efficiently trim your grass on your schedule. As local small business owners, we like to keep things simple, quality, and financially accessible to everyone. We have crafted such a business model that even your dad would agree that we are affordable. Don't hesitate to reach out to us today for a free quote!</p>
-            </section>
+            <!-- About Section -->
+            <article class="home-about">
+                <img src="images/about_main.jpeg" alt="Image of an outstretched hand over grass" title="Even cuts throughout your yard!">
 
-            <section>
-                <img class="about-img" src="images/about_main.jpeg" alt="About Page Banner of Hand on Grass">
-        
-                <p>We are a family of 15 employees who have been cutting grass for a collective of over a decade. We bagan as a small, family-owned business and have now spread to all of western North Carolina. Cutting grass may not be glamorous to some, but it is to us! Helping and connecting with others and each other is why we come into work every day.<br /><br />
-                We hope you are able to get to know us through the exchange of quality work and friendliness. A new customer is a new friend! It is our goal to slowly make the neighborhood a bigger place.</p>
-
-            </section>
-
-            <div class="about-logo" class="text-center">
-                <a href="index.html">
-                    <img class="img-fluid" src="images/cel-mn-drk.png" alt="Brand logo for Cutting Edge Lawncare" title="Cutting Edge Lawncare Logo" />
-                </a>
-            </div>
-
+                <div class="hm-ab-wrapper">
+                    <h2>A little about us...</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque est dolorem qui quo perferendis deleniti
+                    earum, quas dolore quaerat obcaecati at animi laudantium nulla, officia nobis fugiat recusandae ducimus
+                    sapiente.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque est dolorem qui quo perferendis deleniti
+                    earum, quas dolore quaerat obcaecati at animi laudantium nulla, officia nobis fugiat recusandae ducimus
+                    sapiente.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque est dolorem qui quo perferendis deleniti
+                    earum, quas dolore quaerat obcaecati at animi laudantium nulla, officia nobis fugiat recusandae ducimus
+                    sapiente.</p>
+                </div>
+            </article>
 
         </main>
             <footer class="footer">
@@ -126,9 +113,7 @@
                         </ul>
                     </div>
 
-                    <div class="d-grid gap-2 col-6 mx-auto">
-                        <button type="button" class="about-button" class="btn btn-light"><a href="home">Back to Top</a></button>
-                    </div>
+               
     
                     <div class="copyright">
                         <p class="text-center">&copy; 2021 | Cutting Edge Lawncare, LLC. | 123 John Deere Ln., Keystone Heights, FL 32656</p>
@@ -142,5 +127,9 @@
             <script type="text/javascript" src="js/backstretch.js"></script>
             <script type="text/javascript" src="js/hamburger-menu.js"></script>
             <script type="text/javascript" src="js/main.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/less@4.1.1" ></script>
+            <script src="https://cdn.jsdelivr.net/npm/less.min.js.map" ></script>
+            
         </body>
     </html>
