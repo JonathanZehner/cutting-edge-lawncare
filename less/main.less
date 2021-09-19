@@ -27,6 +27,11 @@ article, aside, details, figcaption, figure, footer, header, main, nav, section,
 
 /*-- Body --*/
 // Universal Header Styling
+
+body {
+    max-width: 1500px;
+    margin: auto;
+}
 .header {
     background-color: @bg-kolor;
     font-family: 'Josefin Sans', sans-serif;
@@ -224,6 +229,7 @@ button {
 
     .services-text {
         max-width: 400px;
+        padding-top: 45px;
 
         h3 {
             .h3();
@@ -312,6 +318,7 @@ button {
         margin: auto;
         max-width: 600px;
         padding: @pad;
+        text-align: center;
     }
 
     .accordion {
@@ -377,6 +384,7 @@ button {
 /*-- Footer --*/
 .footer {
     flex-shrink: 0;
+    
 
     .foot-info {
         display: flex;
@@ -396,11 +404,18 @@ button {
         margin-top: 50px;
         text-align: center;
         padding: 0;
+        color: black;
         li {
             display: inline;
             list-style-type: none;
             padding: 10px 30px;
+            color: black;
+            text-decoration-color: black;
+            a {
+                color: #000000;
+            }
         }
+
     }
 
 
@@ -455,11 +470,24 @@ button {
 /*-- Body --*/
 
 
+.copyright-services {
+    text-align: center;
+}
 
 /*--=========================================================--*/
 /*--================ CONTACT PAGE STYLING ===================--*/
 
 /*-- Body --*/
+
+.contactus {
+    text-align: center;
+    padding: 60px;
+    height: 40vh;
+}
+
+.copyright-contact {
+    text-align: center;
+}
 
 
 
@@ -524,11 +552,11 @@ button {
 
 
 
+
 /*--=========================================================--*/
 /*--================ CONTACT PAGE STYLING ===================--*/
 
 /*-- Body --*/
-
 
 
 
