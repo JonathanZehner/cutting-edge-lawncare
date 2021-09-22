@@ -1,4 +1,4 @@
-<img src="images/cel-man-dark-wht.png" />  
+<img src="images/cel-mn-dark-wht.png" />  
 
 # Cutting Edge Lawncare
 Group project with Daniel Harvey and Madeline Pesce: this project is a collaborative effort to build a fictional lawncare business titled Cutting Edge Lawncare.  
